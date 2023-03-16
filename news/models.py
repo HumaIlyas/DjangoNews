@@ -7,7 +7,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
-    post_category = models.CharField(max_length=100, unique=False)
+    category = models.CharField(max_length=100, unique=False)
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -50,13 +50,3 @@ class Comment(models.Model):
 
     def number_of_comments(self):
         return self.comments.count()
-
-
-class Category(models.Model):
-    # schema for the Category model
-    post = models.TextField()
-    post_category = models.CharField(max_length=100, unique=False)
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.post_category
