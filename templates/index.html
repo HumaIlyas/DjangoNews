@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- News Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -31,6 +31,11 @@
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}
                             </p>
+                            {% for comment in comment_list %}
+                            <p class="card-text text-muted h6">{{ comment.created_on}} <i class="far fa-comments"></i>
+                                {{ comment.number_of_comments }}
+                            </p>
+                            {% endfor %} 
                         </div>
                     </div>
                 </div>
@@ -57,4 +62,4 @@
     </nav>
     {% endif %}
 </div>
-{%endblock%}
+{%endblock%} 
