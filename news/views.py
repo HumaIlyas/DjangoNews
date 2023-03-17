@@ -78,6 +78,18 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+class PostCategory(View):
+
+    def get(self, request, *args, **kwargs):
+        template_name = "index.html"
+        category = Category.objects.filter(category=kwargs['category'])
+        print(category)
+        # if post.category.filter(id=request.user.id).exists():
+        #   category = True
+
+        return HttpResponseRedirect(render('category', args=[category]))
+
+
 class CommentList(generic.ListView):
     model = Comment
     template_name = "index.html"
