@@ -81,13 +81,15 @@ class PostLike(View):
 class PostCategory(View):
 
     def get(self, request, *args, **kwargs):
-        template_name = "index.html"
-        category = Category.objects.filter(category=kwargs['category'])
-        print(category)
-        # if post.category.filter(id=request.user.id).exists():
-        #   category = True
+        queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
 
-        return HttpResponseRedirect(render('category', args=[category]))
+        return render(
+            request,
+            "index.html",
+            {
+                "post_list": queryset
+            }
+        )
 
 
 class CommentList(generic.ListView):
