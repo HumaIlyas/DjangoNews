@@ -1,4 +1,5 @@
 from django.test import TestCase
+from django.contrib.auth.models import User
 from .models import Category, Post
 
 
@@ -17,14 +18,52 @@ class TestCategory(TestCase):
 
 
 class TestPost(TestCase):
-    def test_post_string_method_returns_title(self):
-        post = Post.objects.create(post='Test news Post')
-        self.assertEqual(str(post), 'Test news Post')
+    def setUp(self):
+        """
+        Setup for testing
+        """
+        self.user = User.objects.create_user(
+            username='test user',
+            email='test@email.com',
+            password='testpass',
+        )
+        self.user.save()
 
-    def test_created_on_auto_now_add_True(self):
-        post = Post.objects.create(created_on='Test news Post')
-        self.assertTrue(post.created_on)
+        self.category = Category.objects.create(
+            title='test category',
+        )
+        self.category.save()
 
-    def test_updated_on_auto_now_True(self):
-        post = Post.objects.create(updated_on='Test news Post')
-        self.assertTrue(post.updated_on)
+    def test_post(self):
+        """
+        testing post model
+        """
+        post = Post.objects.create(
+            category=self.category,
+            title='Test post',
+            slug='test-post',
+            author=self.user,
+            featured_image='Test image',
+            excerpt='Test excerpt',
+            content='Test content',
+            status=0
+        )
+        post.likes.add(self.user)
+        post_string='Test post'
+        Category = Post({'category': ''})
+        self.assertEqual(str(post.title), 'Test post')
+        self.assertEqual(str(post.slug), 'test-post')
+        self.assertEqual(str(post.author), 'test user')
+        self.assertEqual(str(post.featured_image), 'Test image')
+        self.assertEqual(str(post.excerpt), 'Test excerpt')
+        self.assertEqual(str(post.content), 'Test content')
+        self.assertEqual(int(post.status), 0)
+        self.assertEqual(post.likes.first(), self.user)
+
+        def test_created_on_auto_now_add_True(self):
+            post = Post.objects.create(created_on='Test news Post')
+            self.assertTrue(post.created_on)
+
+        def test_updated_on_auto_now_True(self):
+            post = Post.objects.create(updated_on='Test news Post')
+            self.assertTrue(post.updated_on)
