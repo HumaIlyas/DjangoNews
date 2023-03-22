@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from .models import Category, Post
+from .models import Category, Post, Comment
 
 
 class TestCategory(TestCase):
@@ -67,3 +67,52 @@ class TestPost(TestCase):
         def test_updated_on_auto_now_True(self):
             post = Post.objects.create(updated_on='Test news Post')
             self.assertTrue(post.updated_on)
+
+
+class TestComment(TestCase):
+    def setUp(self):
+        """
+        Setup for testing
+        """
+        self.user = User.objects.create_user(
+            username='test user',
+            email='test@email.com',
+            password='testpass',
+        )
+        self.user.save()
+        
+        self.post = Post.objects.create(
+            title='test post',
+        )
+        self.post.save()
+
+    def test_comment(self):
+        """
+        testing comment model
+        """
+        comment = Comment.objects.create(
+            post=self.post,
+            name='Test name',
+            email='test@email.com',
+            body='Test body'
+        )
+
+        post = Comment.objects.create(
+            post=self.post,
+        )
+        
+        post.comments.add(self.user)
+        comment_string = 'Test comment'
+        Post = Comment({'post': ''})
+        self.assertEqual(str(comment.name), 'Test name')
+        self.assertEqual(str(comment.email), 'test@email.com')
+        self.assertEqual(str(comment.body), 'Test body')
+        self.assertEqual(post.comments.first(), self.user)
+
+        def test_created_on_auto_now_add_True(self):
+            comment = Comment.objects.create(created_on='Test news Comment')
+            self.assertTrue(comment.created_on)
+
+        def test_approved_defaults_to_false(self):
+            comment = Comment.objects.create(name='Test news Comment')
+            self.assertFalse(comment.approved)
