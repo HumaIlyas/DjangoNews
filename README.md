@@ -18,9 +18,10 @@ ___
     - [Navigation bar](#navigation-bar)
     - [Footer](#footer)
     - [Home](#home)
-    - [Gallery](#gallery)
-    - [Contact us](#contact-us)
-    - [Submission message](#submission-message)
+    - [News categories](#news-categories)
+    - [Register](#register)
+    - [Login](#login)
+    - [Logout](#logout)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
     - [Code validation](#code-validation)
@@ -36,15 +37,17 @@ ___
 
 ## Website owner goals
 The main goals of the website owner are:
-* To teach users specific body & mind self-improvement techniques.
-* To provide a website to show benefits & techniques of yoga for body & mind self-improvement.
-* To provide the information about the provisions and opportunities for yoga learners at Delft Body & Mind Center.
-* To invite yoga learners for different types of yoga lessons and classes.
-* To provide the possibility of socialization for yoga learners.
-* To present an offer about the prices for classes and cards for yoga lessons.
+* To create a discussion community for the users.
+* To provide a website for different categories of news. 
+* To provide the possibilty for the users to leave their comments.
+* To provide the possibilty for the users to like the news.
 
 ## External user goals
-The main goals of the website user are different for the new and returning users.
+The main goals of the website user are 
+* To post the news.
+* To read the news.
+* To leave comment on the news.
+* To like the news.
 
 ### New user goals
 The main goals of the website new user are:
