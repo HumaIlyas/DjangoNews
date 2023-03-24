@@ -10,7 +10,7 @@ ___
 # Table of contents
 - [UX](#ux)
     - [Website owner goals](#website-owner-goals)
-    - [External user goals](#external-user-goals)
+    - [User goals](#user-goals)
     - [User stories](#user-stories)
     - [Structure of the website](#structure-of-the-website)
     - [Surface](#surface)
@@ -19,9 +19,17 @@ ___
     - [Footer](#footer)
     - [Home](#home)
     - [News categories](#news-categories)
+        - [Sports](#sports)
+        - [Worklife](#worklife)
+        - [Climate](#climate)
+        - [Science](#science)
+        - [Business](#sports)
     - [Register](#register)
     - [Login](#login)
     - [Logout](#logout)
+- [News detail](#news-detail)
+- [Submission of comment](#submission-of-comment)
+- [Approval of comment](#approval-of-comment)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
     - [Code validation](#code-validation)
@@ -42,45 +50,29 @@ The main goals of the website owner are:
 * To provide the possibilty for the users to leave their comments.
 * To provide the possibilty for the users to like the news.
 
-## External user goals
+## User goals
 The main goals of the website user are 
 * To post the news.
 * To read the news.
 * To leave comment on the news.
 * To like the news.
 
-### New user goals
-The main goals of the website new user are:
-* To learn body & mind self-improvement techniques.
-* To get the knowledge about the benefits & techniques of yoga for body & mind self-improvement.
-* To get the information about the provisions and opportunities for yoga at Delft Body & Mind Center.
-* To get the schedule for different types of yoga lessons and classes.
-* To get the possibility of socialization with other yoga learners.
-* To get the information about the prices for yoga lessons.
-* To find the location of the center and contact details.
-
-### Returning user goals
-The main goals of the website returning user are:
-* to be able to find the up to date schedule for different types of yoga lessons and classes.
-* To be able to send a message to the instructor using a contact form.
-
 ## User stories
 
 ### As a website owner
-* I want to make sure that users are able to use the website intuitively and easily.
-* I would like to present the information about the provisions and opportunities for yoga at Delft Body & Mind Center. 
-* I would like to present an offer about the prices for classes and cards for yoga lessons on the website clearly to potential customers.
-* I need to make sure that the information on the website is always up to date.
-* I need to make sure that new and current customers will find a professional help for learning yoga techniques.
-* I would like to keep the possibility of socialization for new and current yoga learners.
+* View likes: As a Site User/Admin I can view the number of likes on each news so that I can see which is the most popular or viral
+* View comments: As a Site User/Admin I can view comments on an individual news so that I can read the conversation
+* Manage news: As a Site Admin I can create, read, update and delete posts so that I can manage my news content
+* Create draft news: As a Site Admin I can create draft news so that I can finish writing the content later
+* Approve comments: As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
 
 ### As a new customer
-* I would like to find the information about the possibility of socialization with other yoga learners.
-* I would like to contact the coach to change my yoga techniques. 
-
-### As a returning customer
-* I would like to check the schedule for different types of yoga lessons and classes.
-* I would like to invite my friend at Delft Body & Mind Center to learn yoga techniques.
+* Site pagination: As a Site User I can view a paginated list of news so that easily select a news to view
+* View news list: As a Site User I can view a list of news so that I can select one to read
+* Open a news: As a Site User I can click on a post so that I can read the full text
+* Account registration: As a Site User I can register an account so that I can comment and like
+* Comment on a news: As a Site User I can leave comments on a news so that I can be involved in the conversation
+* Like/Unlike: As a Site User I can like or unlike a news so that I can interact with the content
 
 ## Structure of the website
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
@@ -112,74 +104,98 @@ ___
 # Features
 
 ## Navigation bar
-The full responsive navigation bar is featured on all three pages to allow for easy navigation from page to page across all devices.
+The full responsive navigation bar is featured on all the pages to allow for easy navigation from page to page across all devices.
 * On the left side is logo, which can be used as navigation link to the main page.
-* On the right side are links to the Home, Gallery and Contact Us pages.
+* On the left side are also links to the Home, News categories, Register, Login, Logout.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/nav-bar.jpg" alt="navigation bar">
 </div>
 
 ## Footer
-The footer section is consistent on all pages and includes links to the relevant social media sites for Delft Body & Mind Center.
+The footer section is consistent on all pages and includes links to the relevant social media sites for World News.
 * The links will open in a separate tab in a browser to allow easy navigation for the users.
-* The footer is useful for yoga learners to get connected with the community for socialization through social networks.
+* The footer is useful for users to get connected with the community for socialization through social networks.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/footer.jpg" alt="Footer">
 </div>
 
 ## Home
-* The home page includes a photograph with cover text for the users to get information about the location of Delft Body & Mind Center.
-* The inclusion of an eye-catching animation draws the attention of yoga learners to yoga for body & mind self-improvement.
+* The home page includes all categories of news published on World News.
+* The inclusion of an eye-catching animation draws the attention of users for different caegories of news.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/home-page.jpg" alt="Home page">
 </div>
 
-### Benefits & techniques of yoga
-The benefits & techniques of yoga section provides information about the benefits & techniques of yoga. In this section the types of yoga poses with description are also provided to get body & mind self-improvement. 
+## News Categories
+* Different categories of news such as sports, science, worklife, and business will appear on their respective pages. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/benefits-techniques-yoga.jpg" alt="Benefits & techniques of yoga">
+    <img src="assets/images/home-page.jpg" alt="Home page">
 </div>
 
-### About us
-About Us section provides information about the provisions and opportunities for yoga learners at Delft Body & Mind Center. The different types of lessons and prices for classes and cards are also given in this section.
+### Sports
+* The news related to sports are on sports page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/about-us.jpg" alt="About us">
+    <img src="assets/images/sports-page.jpg" alt="Sports page">
 </div>
 
-### Prices
-This section provides information about the classes and cards for the yoga lessons as well as the validity of the cards.
+### Worklife
+* The news related to worklife are on worklife page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/prices.jpg" alt="Prices">
+    <img src="assets/images/worklife-page.jpg" alt="Worklife page">
 </div>
 
-### Lessons 
-This section provides information about the yoga lessons available on different days of the week as well as the possibility of socialization with other yoga learners at the weekend.
+### Climate
+* The news related to climate are on climate page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/lessons-times.jpg" alt="Lessons & times"> 
+    <img src="assets/images/climate-page.jpg" alt="climate page">
 </div>
 
-## Gallery
-The gallery page will provide images to the yoga learners to have some information about yoga poses. The yoga learners will be able to identify the types of poses according to their needs.
+### Science
+* The news related to science are on science page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/gallery.jpg" alt="Gallery page">
+    <img src="assets/images/science-page.jpg" alt="Science page">
 </div>
 
-## Contact us 
-This page will allow yoga learners to get connected to Delft Body & Mind Center to start learning yoga techniques and socialize with other yoga learners.
+### Business
+* The news related to business are on business page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/contact-us-details.jpg" alt="Contact details">
+    <img src="assets/images/business-page.jpg" alt="Business page">
 </div>
 
-* Yoga learners will be able to select among the types of lessons we offer at Delft Body & Mind Center.
-* Yoga learners will be asked to submit their first name, last name, email address, and message to the administration.
+## Register
+Users can register an account so that they can comment and like different categories of news on World News.
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/contact-us-form.jpg" alt="Contact form">
+    <img src="assets/images/register.jpg" alt="Register">
 </div>
 
-## Submission message 
-This page will allow yoga learners to get informed that their message has been successfully sent and they will get response from the administration shortly.
+## Login
+After registration users can login so that they can comment and like different categories of news on World News.
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/submission-message.jpg" alt="Submission message">
+    <img src="assets/images/login.jpg" alt="Login">
+</div>
+
+## Logout
+After registration users can login so that they can comment and like different categories of news on World News.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/logout.jpg" alt="Logout">
+</div>
+
+## News detail
+The users can read the detail about the news by clicking on the title of the post. 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/news_detail.jpg" alt="News detail">
+</div>
+
+## Submission of comment 
+The mesaage of successful submission will appear on the post details page after leaving the comment on a news.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/submission-comment.jpg" alt="Submission comment">
+</div>
+
+## Approval of comment 
+On the post details page after leaving the comment on a news, the mesaage will appear ti indicate that your comments needs approval.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/approval-comment.jpg" alt="Approval comment">
 </div>
 
 [Back to Table of contents](#table-of-contents)
@@ -198,14 +214,29 @@ Different technologies were used to complete the contents of Yoga For Self-Impro
 ### Gitpod  
 * As a development hosting platform.
 
+### Heroku
+* Platform as a Service offering to carry out application deployment, scaling, and management.
+
 ### HTML5
 * As a structure language.
 
 ### CSS
 * As a style language.
 
+### Python
+*  As an interpreted, interactive, and object oriented scripting language.
+
+### JavaScript
+* As an interactivity langauage.
+
+### Django
+* 
+
+### Postgres
+* Relational database
+
 ### Font Awesome
-* As an icon library for icons used in the benefits & techniques of yoga section, social links and contact us page.
+* As an icon library for icons used in the World News comments and likes section, and social links.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -213,14 +244,20 @@ ___
 # Testing
 
 ## Code validation
-Yoga For Self-Improvement is validated for a code using two websites.
+World News is validated for a code using four websites.
 
 ### HTML
-* No errors were found when passing through the official [The W3C Markup Validation Service](https://validator.w3.org/)
+* No errors were found when passing through the official [W3C HTML Validator](https://validator.w3.org/)
 
 ### CSS
-* No errors were found when passing through the official [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
- 
+* No errors were found when passing through the official [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/)
+
+### JavaScript
+* No errors were found when passing through the official [JSHint JavaScript Validator](https://jshint.com/)
+
+### Python
+* No errors were found when passing through the official [PEP8 online validator](http://pep8ci.herokuapp.com/#)
+
 ## Functionality testing
 Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
  
@@ -249,23 +286,28 @@ The website was tested across multiple virtual mobile devices and browsers.
 I adjusted this issue:
    * By adding a code "margin: 0 auto" in about-us and prices section.
    * By adding a code "overflow-x: hidden" in the body.
-   
-### Space between the two sections on different screen sizes
-* The space between the two sections increased with increasing the screen sizes.<br>
-I adjusted this issue:
-    * By adding a code "overflow-y: scroll" for vertical scroll bar in the relevant section (benefits & techniques of yoga).
 
 [Back to Table of contents](#table-of-contents)
 
 ___
 # Deployment
 
+## GitHub
 The website was deployed on GitHub pages. Gitpod was used as a development environment where all the changes were committed to git version control system. The push command was used in Gitpod to save changes into GitHub.
 
 The following steps were taken to deploy the website:
 * Open the GitHub repository, navigate to the Settings tab
 * From the source section, select the Main Branch
 * Click save and page was deployed after auto-refresh to indicate the successful deployment
+
+## Heroku
+World News was deployed using Code Institute's mock terminal for Heroku.
+The steps for deployment were as follows:
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the buildpacks to Python and NodeJS in that order
+* Link the Heroku app to the repository
+* Click on Deploy
 
 ## [View live website](https://humailyas.github.io/Project-1/)
 
@@ -274,21 +316,19 @@ The following steps were taken to deploy the website:
 ___
 # Credits
 
-To complete the contents of Yoga For Self-Improvement website, I learned coding and collected the information from different sources.
-* Learned HTML and CSS coding from [Code Institute](https://learn.codeinstitute.net/)
+To complete the contents of WOrld News website, I learned coding and collected the information from different sources.
+* Learned HTML, CSS, JavaScript, and Python coding from [Code Institute](https://learn.codeinstitute.net/)
 * Used Code Institute student template [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 * Collected information on good and bad coding practices from:
   * [Write Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
   * [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
+* The description on the DjangoBlog provided by the tutor of the Code Institute with [DjangoBlog](****) was useful as well as an inspiration to design World News.
+* I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
 
 ## Content
-* The text for the benefits of yoga for the Home page was taken from [Benefits of Yoga](https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga)
-* The types of yoga lessons were selected by getting the information from [Inspire Yoga](https://inspireyoga.com)
-* The temperature of Hot Yoga was selected by getting the information from [Hot Yoga](https://www.yogapedia.com/definition/10696/hot-yoga)
-* The temperature of slow flow & meditation was selected by getting the information from [Slow Flow-Yoga Moves](https://www.yogamoves.nl/class-styles/slow-flow)
-* The information about prices for yoga lessons and cards was taken from [Yoga Class Prices](https://www.yogashala.nl/en/prices/)
-* The icons used in the benefits & techniques of yoga section, footer, and contact us form were taken from [Font Awesome](https://fontawesome.com/)
-* The code to make the social networks links was taken from [Code Institute Love Running Project](https://github.com/Code-Institute-Org/love-running-2.0)
+* The details about the news were found at [News](**********)
+* The icons used in the World News comments and likes section, and social links were taken from [Font Awesome](https://fontawesome.com/)
+* The code to make the social networks links was taken from [Project](*****)
 
 ## Media
-* The images used on the Home, Gallery, Contact Us and Submission message pages were taken from [Google Images](https://images.google.nl/)
+* The images used on the Home and News Categories pages were taken from [Google Images](https://images.google.nl/)
