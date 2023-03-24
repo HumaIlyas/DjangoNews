@@ -125,5 +125,5 @@ class TestComment(TestCase):
             self.assertTrue(comment.created_on)
 
         def test_approved_defaults_to_false(self):
-            comment = Comment.objects.create(name='Test news Comment')
+            comment = Comment.objects.create(comment='Test news Comment')
             self.assertFalse(comment.approved)
