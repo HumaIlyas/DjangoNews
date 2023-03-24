@@ -1,10 +1,10 @@
-# Yoga For Self-Improvement
-Yoga For Self-Improvement is a site for users who are interested in learning body & mind self-improvement techniques to keep themselves fit as well as looking for a place for socialization. The goal of the site is to motivate and teach user’s specific body & mind self-improvement techniques in Delft, The Netherlands.
+# World News
+World News is a site for users who are interested in reading news of different categories. World News will keep them aware about the happenings around the world. The goal of the site is provide a platform to the users for discussion while commenting and liking the news. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/different-screen-sizes.jpg" alt="Website on different screen sizes">
 </div>
 
-## [View live website](https://humailyas.github.io/Project-1/)
+## [View live website](https://humailyas.github.io/****)
 
 ___
 # Table of contents
