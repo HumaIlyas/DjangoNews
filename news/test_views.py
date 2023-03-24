@@ -1,9 +1,12 @@
 from django.test import TestCase
 from django.test.client import Client
 from django.shortcuts import render, get_object_or_404, reverse
+from django.views import generic, View
 from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
 from .models import Post
-from .views import PostList, CommentList
+from .forms import CommentForm
+from .views import PostList, PostDetail, CommentList, CategoryList
 
 
 class TestPost(TestCase):
@@ -23,8 +26,15 @@ class TestPost(TestCase):
     
     def test_post_list(self):
         test_response = self.client.get('/posts/')
-        self.assertEqual(test_response.status_code, 404, 'created_on')
+        self.assertEqual(test_response.status_code, 404, 'created on')
         self.assertFalse('post_list' in test_response.context)
+
+    def test_post_detail(self):
+        test_response = self.client.get('/posts/')
+        self.assertEqual(test_response.status_code, 404)
+        self.assertFalse('post_detail' in test_response.context, 'comments')
+        self.assertFalse('post_detail' in test_response.context, 'likes')
+        self.assertRedirects(test_response, 'post_detail.html')
 
 
 class TestComment(TestCase):    
