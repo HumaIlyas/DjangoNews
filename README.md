@@ -1,108 +1,291 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Yoga For Self-Improvement
+Yoga For Self-Improvement is a site for users who are interested in learning body & mind self-improvement techniques to keep themselves fit as well as looking for a place for socialization. The goal of the site is to motivate and teach user’s specific body & mind self-improvement techniques in Delft, The Netherlands.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/different-screen-sizes.jpg" alt="Website on different screen sizes">
+</div>
 
-Welcome HumaIlyas,
+## [View live website](https://humailyas.github.io/Project-1/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+___
+# Table of contents
+- [UX](#ux)
+    - [Website owner goals](#website-owner-goals)
+    - [External user goals](#external-user-goals)
+    - [User stories](#user-stories)
+    - [Structure of the website](#structure-of-the-website)
+    - [Surface](#surface)
+- [Features](#features)
+    - [Navigation bar](#navigation-bar)
+    - [Footer](#footer)
+    - [Home](#home)
+    - [Gallery](#gallery)
+    - [Contact us](#contact-us)
+    - [Submission message](#submission-message)
+- [Technologies used](#technologies-used)
+- [Testing](#testing)
+    - [Code validation](#code-validation)
+    - [Functionality testing](#functionality-testing)
+    - [Compatibility testing](#compatibility-testing)
+    - [Performance testing](#performance-testing)
+    - [Issues found during site development](#issues-found-during-site-development)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+___
+# UX
 
-## Gitpod Reminders
+## Website owner goals
+The main goals of the website owner are:
+* To teach users specific body & mind self-improvement techniques.
+* To provide a website to show benefits & techniques of yoga for body & mind self-improvement.
+* To provide the information about the provisions and opportunities for yoga learners at Delft Body & Mind Center.
+* To invite yoga learners for different types of yoga lessons and classes.
+* To provide the possibility of socialization for yoga learners.
+* To present an offer about the prices for classes and cards for yoga lessons.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## External user goals
+The main goals of the website user are different for the new and returning users.
 
-`python3 -m http.server`
+### New user goals
+The main goals of the website new user are:
+* To learn body & mind self-improvement techniques.
+* To get the knowledge about the benefits & techniques of yoga for body & mind self-improvement.
+* To get the information about the provisions and opportunities for yoga at Delft Body & Mind Center.
+* To get the schedule for different types of yoga lessons and classes.
+* To get the possibility of socialization with other yoga learners.
+* To get the information about the prices for yoga lessons.
+* To find the location of the center and contact details.
 
-A blue button should appear to click: _Make Public_,
+### Returning user goals
+The main goals of the website returning user are:
+* to be able to find the up to date schedule for different types of yoga lessons and classes.
+* To be able to send a message to the instructor using a contact form.
 
-Another blue button should appear to click: _Open Browser_.
+## User stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### As a website owner
+* I want to make sure that users are able to use the website intuitively and easily.
+* I would like to present the information about the provisions and opportunities for yoga at Delft Body & Mind Center. 
+* I would like to present an offer about the prices for classes and cards for yoga lessons on the website clearly to potential customers.
+* I need to make sure that the information on the website is always up to date.
+* I need to make sure that new and current customers will find a professional help for learning yoga techniques.
+* I would like to keep the possibility of socialization for new and current yoga learners.
 
-A blue button should appear to click: _Make Public_,
+### As a new customer
+* I would like to find the information about the possibility of socialization with other yoga learners.
+* I would like to contact the coach to change my yoga techniques. 
 
-Another blue button should appear to click: _Open Browser_.
+### As a returning customer
+* I would like to check the schedule for different types of yoga lessons and classes.
+* I would like to invite my friend at Delft Body & Mind Center to learn yoga techniques.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Structure of the website
+* The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
+* On all the above mentioned devices users can have a fantastic experience. 
+* All parts of the website are designed to achieve maximum user satisfaction.
 
-To log into the Heroku toolbelt CLI:
+## Surface
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Colors
+Main colours used in the development of Yoga For Self-Improvement:
+* background color: rgba(239, 200, 200, 0.8); rgba(231, 219, 219, 0.6); rgba(248, 244, 244, 0.6); rgba(184, 248, 245, 0.8); rgba(246, 224, 224, 0.8); rgb(247, 238, 238); #f69e9e
+* font color: rgb(30, 27, 27); rgb(109, 10, 10); rgb(69, 6, 6); #fafafa
+* link color: rgb(30, 27, 27)
+* hover color: rgb(30, 27, 27); rgb(109, 10, 10); #f35050
+* horizontal line: #3a3a3a
+* border color: rgb(199, 197, 197); #fafafa; rgb(246, 224, 224)
+* social networks: rgb(109, 10, 10)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Fonts 
+* As a main font lato and as a backup font sans-serif are used for the contents of the website.
+* As a main font Oswald and as a backup font sans-serif are used for the headings of the website.
 
-------
+### Images
+* Images are taken from [Google Images](https://images.google.nl/), which is credited in the [credits](#credits) section.
 
-## Release History
+[Back to Table of contents](#table-of-contents)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+___
+# Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Navigation bar
+The full responsive navigation bar is featured on all three pages to allow for easy navigation from page to page across all devices.
+* On the left side is logo, which can be used as navigation link to the main page.
+* On the right side are links to the Home, Gallery and Contact Us pages.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/nav-bar.jpg" alt="navigation bar">
+</div>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Footer
+The footer section is consistent on all pages and includes links to the relevant social media sites for Delft Body & Mind Center.
+* The links will open in a separate tab in a browser to allow easy navigation for the users.
+* The footer is useful for yoga learners to get connected with the community for socialization through social networks.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/footer.jpg" alt="Footer">
+</div>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Home
+* The home page includes a photograph with cover text for the users to get information about the location of Delft Body & Mind Center.
+* The inclusion of an eye-catching animation draws the attention of yoga learners to yoga for body & mind self-improvement.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/home-page.jpg" alt="Home page">
+</div>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Benefits & techniques of yoga
+The benefits & techniques of yoga section provides information about the benefits & techniques of yoga. In this section the types of yoga poses with description are also provided to get body & mind self-improvement. 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/benefits-techniques-yoga.jpg" alt="Benefits & techniques of yoga">
+</div>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### About us
+About Us section provides information about the provisions and opportunities for yoga learners at Delft Body & Mind Center. The different types of lessons and prices for classes and cards are also given in this section.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/about-us.jpg" alt="About us">
+</div>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Prices
+This section provides information about the classes and cards for the yoga lessons as well as the validity of the cards.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/prices.jpg" alt="Prices">
+</div>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Lessons 
+This section provides information about the yoga lessons available on different days of the week as well as the possibility of socialization with other yoga learners at the weekend.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/lessons-times.jpg" alt="Lessons & times"> 
+</div>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Gallery
+The gallery page will provide images to the yoga learners to have some information about yoga poses. The yoga learners will be able to identify the types of poses according to their needs.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/gallery.jpg" alt="Gallery page">
+</div>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Contact us 
+This page will allow yoga learners to get connected to Delft Body & Mind Center to start learning yoga techniques and socialize with other yoga learners.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/contact-us-details.jpg" alt="Contact details">
+</div>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Yoga learners will be able to select among the types of lessons we offer at Delft Body & Mind Center.
+* Yoga learners will be asked to submit their first name, last name, email address, and message to the administration.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/contact-us-form.jpg" alt="Contact form">
+</div>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Submission message 
+This page will allow yoga learners to get informed that their message has been successfully sent and they will get response from the administration shortly.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/submission-message.jpg" alt="Submission message">
+</div>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+[Back to Table of contents](#table-of-contents)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+___
+# Technologies used
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Different technologies were used to complete the contents of Yoga For Self-Improvement website.
 
-------
+### GitHub
+* As a software hosting platform to keep project in a remote location.
 
-## FAQ about the uptime script
+### Git
+* As a version-control system tracking.
 
-**Why have you added this script?**
+### Gitpod  
+* As a development hosting platform.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### HTML5
+* As a structure language.
 
-**How will this affect me?**
+### CSS
+* As a style language.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Font Awesome
+* As an icon library for icons used in the benefits & techniques of yoga section, social links and contact us page.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+[Back to Table of contents](#table-of-contents)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+___
+# Testing
 
-**So….?**
+## Code validation
+Yoga For Self-Improvement is validated for a code using two websites.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### HTML
+* No errors were found when passing through the official [The W3C Markup Validation Service](https://validator.w3.org/)
 
-**Can I opt out?**
+### CSS
+* No errors were found when passing through the official [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+ 
+## Functionality testing
+Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
+ 
+## Compatibility testing
+The website was tested across multiple virtual mobile devices and browsers.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Performance testing
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool was used to check the performance of the website.
+* Couple of changes were made to improve the performance.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Final results
+* The colors and fonts chosen are easy to read and accessible on desktop. 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/accessibility-desktop.jpg" alt="Accessibility on desktop">
+</div>
 
-**Anything more?**
+* The colors and fonts chosen are easy to read and accessible on mobile.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/accessibility-mobile.jpg" alt="Accessibility on mobile">
+</div>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Issues found during site development
 
----
+### Horizontal scroll bar on the bottom of the screen
+* Horizontal scroll bar appeared on the bottom of the screen while adding different sections on the pages.<br>
+I adjusted this issue:
+   * By adding a code "margin: 0 auto" in about-us and prices section.
+   * By adding a code "overflow-x: hidden" in the body.
+   
+### Space between the two sections on different screen sizes
+* The space between the two sections increased with increasing the screen sizes.<br>
+I adjusted this issue:
+    * By adding a code "overflow-y: scroll" for vertical scroll bar in the relevant section (benefits & techniques of yoga).
 
-Happy coding!
+[Back to Table of contents](#table-of-contents)
+
+___
+# Deployment
+
+The website was deployed on GitHub pages. Gitpod was used as a development environment where all the changes were committed to git version control system. The push command was used in Gitpod to save changes into GitHub.
+
+The following steps were taken to deploy the website:
+* Open the GitHub repository, navigate to the Settings tab
+* From the source section, select the Main Branch
+* Click save and page was deployed after auto-refresh to indicate the successful deployment
+
+## [View live website](https://humailyas.github.io/Project-1/)
+
+[Back to Table of contents](#table-of-contents)
+
+___
+# Credits
+
+To complete the contents of Yoga For Self-Improvement website, I learned coding and collected the information from different sources.
+* Learned HTML and CSS coding from [Code Institute](https://learn.codeinstitute.net/)
+* Used Code Institute student template [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* Collected information on good and bad coding practices from:
+  * [Write Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
+  * [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
+
+## Content
+* The text for the benefits of yoga for the Home page was taken from [Benefits of Yoga](https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga)
+* The types of yoga lessons were selected by getting the information from [Inspire Yoga](https://inspireyoga.com)
+* The temperature of Hot Yoga was selected by getting the information from [Hot Yoga](https://www.yogapedia.com/definition/10696/hot-yoga)
+* The temperature of slow flow & meditation was selected by getting the information from [Slow Flow-Yoga Moves](https://www.yogamoves.nl/class-styles/slow-flow)
+* The information about prices for yoga lessons and cards was taken from [Yoga Class Prices](https://www.yogashala.nl/en/prices/)
+* The icons used in the benefits & techniques of yoga section, footer, and contact us form were taken from [Font Awesome](https://fontawesome.com/)
+* The code to make the social networks links was taken from [Code Institute Love Running Project](https://github.com/Code-Institute-Org/love-running-2.0)
+
+## Media
+* The images used on the Home, Gallery, Contact Us and Submission message pages were taken from [Google Images](https://images.google.nl/)
