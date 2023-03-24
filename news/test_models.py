@@ -49,6 +49,7 @@ class TestPost(TestCase):
             status=0
         )
         post.likes.add(self.user)
+        post.likes.count()
         post_string='Test post'
         Category = Post({'category': ''})
         self.assertEqual(str(post.title), 'Test post')
@@ -59,6 +60,11 @@ class TestPost(TestCase):
         self.assertEqual(str(post.content), 'Test content')
         self.assertEqual(int(post.status), 0)
         self.assertEqual(post.likes.first(), self.user)
+        self.assertEqual(post.likes.count(), 1)
+
+        def test_post_string_method_returns_title(self):
+            post = Post.objects.create(post='Test news Post')
+            self.assertEqual(str(title), 'Test news Post')
 
         def test_created_on_auto_now_add_True(self):
             post = Post.objects.create(created_on='Test news Post')
@@ -100,14 +106,19 @@ class TestComment(TestCase):
         post = Comment.objects.create(
             post=self.post,
         )
-        
         post.comments.add(self.user)
+        post.comments.count()
         comment_string = 'Test comment'
         Post = Comment({'post': ''})
         self.assertEqual(str(comment.name), 'Test name')
         self.assertEqual(str(comment.email), 'test@email.com')
         self.assertEqual(str(comment.body), 'Test body')
         self.assertEqual(post.comments.first(), self.user)
+        self.assertEqual(post.comments.count(), 1)
+
+        def test_comment_string_method_returns_body_name(self):
+            comment = Comment.objects.create(comment='Test news Comment')
+            self.assertEqual(str(body.name), 'Test news Comment')
 
         def test_created_on_auto_now_add_True(self):
             comment = Comment.objects.create(created_on='Test news Comment')
