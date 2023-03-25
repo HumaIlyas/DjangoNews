@@ -230,7 +230,7 @@ Different technologies were used to complete the contents of Yoga For Self-Impro
 * As an interactivity langauage.
 
 ### Django
-* 
+* As a high-level Python web framework that encourages rapid development and clean, pragmatic design
 
 ### Postgres
 * Relational database

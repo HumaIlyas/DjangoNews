@@ -118,7 +118,7 @@ class TestComment(TestCase):
 
         def test_comment_string_method_returns_body_name(self):
             comment = Comment.objects.create(comment='Test news Comment')
-            self.assertEqual(str(body.name), 'Test news Comment')
+            self.assertEqual((comment.body), (comment.name), 'Test news Comment')
 
         def test_created_on_auto_now_add_True(self):
             comment = Comment.objects.create(created_on='Test news Comment')
