@@ -23,9 +23,17 @@ class TestPostList(TestCase):
         self.assertEqual(test_response.status_code, 404, 'created on')
         self.assertFalse('news/index.html' in test_response.context)
 
-    def test_post_detail(self):
+
+class TestPostDetail(TestCase):
+    def test_get(self):
         queryset = Post.objects.filter(status=1)
         test_response = self.client.get(f'/posts/{queryset}')
+        self.assertEqual(test_response.status_code, 404)
+        self.assertFalse('news/post_detail.html' in test_response.context)
+
+    def test_post(self):
+        queryset = Post.objects.filter(status=1)
+        test_response = self.client.post(f'/posts/{queryset}')
         self.assertEqual(test_response.status_code, 404)
         self.assertFalse('news/post_detail.html' in test_response.context)
      
