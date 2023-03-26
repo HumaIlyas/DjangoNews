@@ -74,6 +74,10 @@ class TestPost(TestCase):
             post = Post.objects.create(updated_on='Test news Post')
             self.assertTrue(post.updated_on)
 
+        def test_ordering_are_explicit_in_post_metaclass(self):
+            ordering = tilte._meta.ordering
+            self.assertEquals(ordering[0], '-created_on')
+
 
 class TestComment(TestCase):
     def setUp(self):
@@ -127,3 +131,7 @@ class TestComment(TestCase):
         def test_approved_defaults_to_false(self):
             comment = Comment.objects.create(comment='Test news Comment')
             self.assertFalse(comment.approved)
+
+        def test_ordering_are_explicit_in_comment_metaclass(self):
+            ordering = comments._meta.ordering
+            self.assertEquals(ordering[0], 'created_on')
