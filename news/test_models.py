@@ -62,10 +62,6 @@ class TestPost(TestCase):
         self.assertEqual(post.likes.first(), self.user)
         self.assertEqual(post.likes.count(), 1)
 
-        def test_post_string_method_returns_title(self):
-            post = Post.objects.create(post='Test news Post')
-            self.assertEqual(str(title), 'Test news Post')
-
         def test_created_on_auto_now_add_True(self):
             post = Post.objects.create(created_on='Test news Post')
             self.assertTrue(post.created_on)
@@ -76,7 +72,7 @@ class TestPost(TestCase):
 
         def test_ordering_are_explicit_in_post_metaclass(self):
             ordering = tilte._meta.ordering
-            self.assertEquals(ordering[0], '-created_on')
+            self.assertEqual(ordering[0], '-created_on')
 
 
 class TestComment(TestCase):
@@ -120,10 +116,6 @@ class TestComment(TestCase):
         self.assertEqual(post.comments.first(), self.user)
         self.assertEqual(post.comments.count(), 1)
 
-        def test_comment_string_method_returns_body_name(self):
-            comment = Comment.objects.create(comment='Test news Comment')
-            self.assertEqual((comment.body), (comment.name), 'Test news Comment')
-
         def test_created_on_auto_now_add_True(self):
             comment = Comment.objects.create(created_on='Test news Comment')
             self.assertTrue(comment.created_on)
@@ -134,4 +126,4 @@ class TestComment(TestCase):
 
         def test_ordering_are_explicit_in_comment_metaclass(self):
             ordering = comments._meta.ordering
-            self.assertEquals(ordering[0], 'created_on')
+            self.assertEqual(ordering[0], 'created_on')
