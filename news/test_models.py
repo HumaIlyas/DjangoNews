@@ -71,7 +71,7 @@ class TestPost(TestCase):
             self.assertTrue(post.updated_on)
 
         def test_ordering_are_explicit_in_post_metaclass(self):
-            ordering = tilte._meta.ordering
+            ordering = post._meta.ordering
             self.assertEqual(ordering[0], '-created_on')
 
 
