@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib.auth.models import User
 from .models import Category, Post, Comment
 from .forms import CommentForm
-from .views import PostList, PostDetail, PostCategory, CommentList, CategoryList
+from .views import PostList, PostDetail, PostLike, PostCategory, CommentList, CategoryList
 
 
 class TestPostList(TestCase):
@@ -56,6 +56,14 @@ class TestPostCategory(TestCase):
         queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
         test_response = self.client.get(f'/category/{queryset}')
         self.assertEqual(test_response.context, 'news/index.html')
+
+
+class TestPostLike(TestCase):
+    def test_post(self):
+        post = get_object_or_404(Post)
+        test_response = self.client.get('/posts/')
+        self.assertEqual(test_response.status_code, 404, 'created_on')
+        self.assertFalse('post_detail' in test_response.context, 'likes')
 
 
 class TestCommentList(TestCase):    
