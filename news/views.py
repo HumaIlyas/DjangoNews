@@ -21,18 +21,15 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-
-        return render(
-            request, 
-            "news/post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": CommentForm()
-            }
-        )
+        
+        context = {
+            "post": post,
+            "comments": comments,
+            "commented": False,
+            "liked": liked,
+            "comment_form": CommentForm()
+        }
+        return render(request, "news/post_detail.html", context)
     
     def post(self, request, slug, *args, **kwargs):
 
@@ -53,17 +50,14 @@ class PostDetail(View):
         else:
             comment_form = CommentForm()
 
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "commented": True,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
-        )
+        context = {
+            "post": post,
+            "comments": comments,
+            "commented": True,
+            "liked": liked,
+            "comment_form": CommentForm()
+        }
+        return render(request, "news/post_detail.html", context)
 
 
 class PostLike(View):
@@ -82,14 +76,10 @@ class PostCategory(View):
 
     def get(self, request, *args, **kwargs):
         queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
-
-        return render(
-            request,
-            "index.html",
-            {
-                "post_list": queryset
-            }
-        )
+        context = {
+            "post_list": queryset
+        }
+        return render(request, "news/index.html", context)
 
 
 class CommentList(generic.ListView):
