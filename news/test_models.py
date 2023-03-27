@@ -47,7 +47,6 @@ class TestPost(TestCase):
         )
         post.likes.add(self.user)
         post.likes.count()
-        post_string='Test post'
         Category = Post({'category': ''})
         self.assertEqual(str(post.title), 'Test post')
         self.assertEqual(str(post.slug), 'test-post')
