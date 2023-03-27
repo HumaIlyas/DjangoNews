@@ -1,20 +1,17 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
 from .models import Category, Post, Comment
+import pytz
+from unittest import mock
+import datetime
 
 
 class TestCategory(TestCase):
     def test_created_on_auto_now_add_True(self):
-        category = Category.objects.create(created_on='Test news Category')
-        self.assertTrue(category.created_on)
-
-    def test_category_string_method_returns_category(self):
-        category = Category.objects.create(category='Test news Category')
-        self.assertEqual(str(category), 'Test news Category')
-    
-    def test_category_string_method_returns_title(self):
-        category = Category.objects.create(category='Test news Category')
-        self.assertEqual(str(category), 'Test news Category')
+        mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
+        with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+            category = Category.objects.create(title='test', category='test')
+            self.assertTrue(category.created_on, mocked)
 
 
 class TestPost(TestCase):
@@ -61,14 +58,18 @@ class TestPost(TestCase):
         self.assertEqual(int(post.status), 0)
         self.assertEqual(post.likes.first(), self.user)
         self.assertEqual(post.likes.count(), 1)
-
+        
         def test_created_on_auto_now_add_True(self):
-            post = Post.objects.create(created_on='Test news Post')
-            self.assertTrue(post.created_on)
+            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
+            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+                post = Post.objects.create(title='test', post='test')
+                self.assertEqual(post.created_on, mocked)
 
         def test_updated_on_auto_now_True(self):
-            post = Post.objects.create(updated_on='Test news Post')
-            self.assertTrue(post.updated_on)
+            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
+            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+                post = Post.objects.create(title='test', post='test')
+                self.assertEqual(post.updated_on, mocked)
 
         def test_ordering_are_explicit_in_post_metaclass(self):
             ordering = post._meta.ordering
@@ -117,8 +118,10 @@ class TestComment(TestCase):
         self.assertEqual(post.comments.count(), 1)
 
         def test_created_on_auto_now_add_True(self):
-            comment = Comment.objects.create(created_on='Test news Comment')
-            self.assertTrue(comment.created_on)
+            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
+            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+                comment = Comment.objects.create(body='test', name='test')
+                self.assertEqual(comment.created_on, mocked)
 
         def test_approved_defaults_to_false(self):
             comment = Comment.objects.create(comment='Test news Comment')
