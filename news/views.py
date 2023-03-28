@@ -69,7 +69,7 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('news/post_detail.html', args=[slug]))
 
 
 class PostCategory(View):

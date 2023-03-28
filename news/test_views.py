@@ -51,19 +51,30 @@ class TestPostDetail(TestCase):
 
 class TestPostCategory(TestCase):
     def test_get(self):
-        kwargs=''
-        category='category'
-        queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
+        queryset = Post.objects.filter(title='test')
         test_response = self.client.get(f'/category/{queryset}')
         self.assertEqual(test_response.context, 'news/index.html')
 
 
 class TestPostLike(TestCase):
+    def setUp(self):
+        """
+        Setup for testing
+        """
+        self.user = User.objects.create_user(
+            username='test user',
+            email='test@email.com',
+            password='testpass',
+        )
+        self.user.save()
+
     def test_post(self):
-        post = get_object_or_404(Post)
         test_response = self.client.get('/posts/')
-        self.assertEqual(test_response.status_code, 404, 'created_on')
-        self.assertFalse('post_detail' in test_response.context, 'likes')
+        post = Post.objects.create(title='Test post')
+        post.likes.add(self.user)
+        self.assertEqual(test_response.status_code, 404)
+        self.assertEqual(post.likes.first(), self.user)
+        self.assertFalse('news/post_detail.html' in test_response.context)
 
 
 class TestCommentList(TestCase):    
