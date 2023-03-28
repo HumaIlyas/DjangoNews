@@ -61,13 +61,13 @@ class TestPost(TestCase):
         def test_created_on_auto_now_add_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(title='test')
+                post = Post.objects.create(post='test')
                 self.assertEqual(post.created_on, mocked)
 
         def test_updated_on_auto_now_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(title='test')
+                post = Post.objects.create(post='test')
                 self.assertEqual(post.updated_on, mocked)
 
         def test_ordering_are_explicit_in_post_metaclass(self):
@@ -119,7 +119,7 @@ class TestComment(TestCase):
         def test_created_on_auto_now_add_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                comment = Comment.objects.create(body='test', name='test')
+                comment = Comment.objects.create(comment='test', name='test')
                 self.assertEqual(comment.created_on, mocked)
 
         def test_approved_defaults_to_false(self):
