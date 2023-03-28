@@ -5,6 +5,16 @@ from .models import Category, Post, Comment
 from .forms import CommentForm
 
 
+class PostCategory(View):
+
+    def get(self, request, *args, **kwargs):
+        queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
+        context = {
+            "post_list": queryset
+        }
+        return render(request, "news/index.html", context)
+
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -70,16 +80,6 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('news/post_detail.html', args=[slug]))
-
-
-class PostCategory(View):
-
-    def get(self, request, *args, **kwargs):
-        queryset = list(Post.objects.filter(category__category=kwargs['category'].title()))
-        context = {
-            "post_list": queryset
-        }
-        return render(request, "news/index.html", context)
 
 
 class CommentList(generic.ListView):

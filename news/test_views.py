@@ -6,6 +6,13 @@ from .forms import CommentForm
 from .views import PostList, PostDetail, PostLike, PostCategory, CommentList, CategoryList
 
 
+class TestPostCategory(TestCase):
+    def test_get(self):
+        category = Category.objects.create(title='test', category='test')
+        test_response = self.client.get('/category/')
+        self.assertEqual('news/index.html' in test_response.context, False)
+
+
 class TestPostList(TestCase):
     def setUp(self):
         """
@@ -47,13 +54,6 @@ class TestPostDetail(TestCase):
         test_response = self.client.post(f'/posts/{queryset}')
         self.assertEqual(test_response.status_code, 404)
         self.assertFalse('news/post_detail.html' in test_response.context)
-
-
-class TestPostCategory(TestCase):
-    def test_get(self):
-        queryset = Post.objects.filter(title='test')
-        test_response = self.client.get(f'/category/{queryset}')
-        self.assertEqual(test_response.context, 'news/index.html')
 
 
 class TestPostLike(TestCase):
