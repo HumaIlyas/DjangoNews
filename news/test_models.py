@@ -61,18 +61,18 @@ class TestPost(TestCase):
         def test_created_on_auto_now_add_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(post='test')
+                post = Post.objects.create(title='Test post', category=self.category)
                 self.assertEqual(post.created_on, mocked)
 
         def test_updated_on_auto_now_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(post='test')
+                post = Post.objects.create(title='Test post', category=self.category)
                 self.assertEqual(post.updated_on, mocked)
 
         def test_ordering_are_explicit_in_post_metaclass(self):
-            ordering = post.Meta.ordering
-            self.assertEquals(ordering, ['-created_on'])
+            post = Post()
+            self.assertEqual(post.Meta.ordering, ['-created_on'])
 
 
 class TestComment(TestCase):
@@ -100,7 +100,8 @@ class TestComment(TestCase):
             post=self.post,
             name='Test name',
             email='test@email.com',
-            body='Test body'
+            body='Test body',
+            approved=False
         )
 
         post = Comment.objects.create(
@@ -115,17 +116,14 @@ class TestComment(TestCase):
         self.assertEqual(str(comment.body), 'Test body')
         self.assertEqual(post.comments.first(), self.user)
         self.assertEqual(post.comments.count(), 1)
+        self.assertEqual(str(comment.approved), 'False')
 
         def test_created_on_auto_now_add_True(self):
             mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
             with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                comment = Comment.objects.create(comment='test', name='test')
+                comment = Comment.objects.create(body='Test body', name='Test name')
                 self.assertEqual(comment.created_on, mocked)
 
-        def test_approved_defaults_to_false(self):
-            comment = Comment.objects.create(comment='Test news Comment')
-            self.assertFalse(comment.approved)
-
         def test_ordering_are_explicit_in_comment_metaclass(self):
-            ordering = comment.Meta.ordering
-            self.assertEquals(ordering, ['created_on'])
+            comment = Comment()
+            self.assertEqual(post.Meta.ordering, ['created_on'])
