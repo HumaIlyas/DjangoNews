@@ -79,7 +79,7 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('news/post_detail.html', args=[slug]))
+        return HttpResponseRedirect(reverse('news/post_detail', args=[slug]))
 
 
 class CommentList(generic.ListView):
