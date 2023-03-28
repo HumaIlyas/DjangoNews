@@ -71,8 +71,8 @@ class TestPost(TestCase):
                 self.assertEqual(post.updated_on, mocked)
 
         def test_ordering_are_explicit_in_post_metaclass(self):
-            ordering = post._meta.ordering
-            self.assertEquals(ordering[0], '-created_on')
+            ordering = post.Meta.ordering
+            self.assertEquals(ordering, ['-created_on'])
 
 
 class TestComment(TestCase):
@@ -127,5 +127,5 @@ class TestComment(TestCase):
             self.assertFalse(comment.approved)
 
         def test_ordering_are_explicit_in_comment_metaclass(self):
-            ordering = comments._meta.ordering
-            self.assertEquals(ordering[0], 'created_on')
+            ordering = comment.Meta.ordering
+            self.assertEquals(ordering, ['created_on'])
