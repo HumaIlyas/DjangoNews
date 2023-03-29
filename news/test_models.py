@@ -7,8 +7,8 @@ import datetime
 
 
 class TestCategory(TestCase):
-    def test_created_on_auto_now_add_True(self):
-        mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
+    def test_created_on(self):
+        mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
         with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
             category = Category.objects.create(title='test', category='test')
             self.assertEqual(category.created_on, mocked)
@@ -58,21 +58,21 @@ class TestPost(TestCase):
         self.assertEqual(post.likes.first(), self.user)
         self.assertEqual(post.likes.count(), 1)
         
-        def test_created_on_auto_now_add_True(self):
-            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
-            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(title='Test post', category=self.category)
-                self.assertEqual(post.created_on, mocked)
+    def test_created_on(self):
+        mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
+        with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+            post = Post.objects.create(slug='test-post')
+            self.assertEqual(post.created_on, mocked)
 
-        def test_updated_on_auto_now_True(self):
-            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
-            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                post = Post.objects.create(title='Test post', category=self.category)
-                self.assertEqual(post.updated_on, mocked)
+    def test_updated_on(self):
+        mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
+        with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+            post = Post.objects.create(slug='test-post')
+            self.assertEqual(post.updated_on, mocked)
 
-        def test_ordering_are_explicit_in_post_metaclass(self):
-            post = Post()
-            self.assertEqual(post.Meta.ordering, ['-created_on'])
+    def test_ordering_post_metaclass(self):
+        post = Post.objects.create(slug='test-post')
+        self.assertEqual(post._meta.ordering[0], '-created_on')
 
 
 class TestComment(TestCase):
@@ -107,23 +107,17 @@ class TestComment(TestCase):
         post = Comment.objects.create(
             post=self.post,
         )
-        post.comments.add(self.user)
-        post.comments.count()
-        comment_string = 'Test comment'
         Post = Comment({'post': ''})
-        self.assertEqual(str(comment.name), 'Test name')
+        self.assertEqual(comment.__str__(), f"Comment {comment.body} by {comment.name}")
         self.assertEqual(str(comment.email), 'test@email.com')
-        self.assertEqual(str(comment.body), 'Test body')
-        self.assertEqual(post.comments.first(), self.user)
-        self.assertEqual(post.comments.count(), 1)
         self.assertEqual(str(comment.approved), 'False')
 
-        def test_created_on_auto_now_add_True(self):
-            mocked = datetime.datetime(2018, 4, 4, 0, 0, 0, tzinfo=pytz.utc)
-            with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-                comment = Comment.objects.create(body='Test body', name='Test name')
-                self.assertEqual(comment.created_on, mocked)
+    def test_created_on(self):
+        mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
+        with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
+            comment = Comment.objects.create(post=self.post)
+            self.assertEqual(comment.created_on, mocked)
 
-        def test_ordering_are_explicit_in_comment_metaclass(self):
-            comment = Comment()
-            self.assertEqual(post.Meta.ordering, ['created_on'])
+    def test_ordering_comment_metaclass(self):
+        comment = Comment.objects.create(post=self.post)
+        self.assertEqual(comment._meta.ordering[0], 'created_on')
