@@ -72,7 +72,7 @@ class TestPost(TestCase):
 
     def test_ordering_post_metaclass(self):
         post = Post.objects.create(slug='test-post')
-        self.assertEqual(post._meta.ordering[0], '-created_on')
+        self.assertEqual(post._meta.ordering, ['-created_on'])
 
 
 class TestComment(TestCase):
@@ -120,4 +120,4 @@ class TestComment(TestCase):
 
     def test_ordering_comment_metaclass(self):
         comment = Comment.objects.create(post=self.post)
-        self.assertEqual(comment._meta.ordering[0], 'created_on')
+        self.assertEqual(comment._meta.ordering, ['created_on'])
