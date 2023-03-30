@@ -1,7 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500&family=Oswald:wght@400&display=swap");
+
+/* body */
 body {
     background-color: #F9FAFC;
 }
 
+/* background colors */
+.light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.main-bg {
+    background-color: #f8f9fb;
+}
+
+/* logo */
+.logo {
+    height: 40px;
+    padding-right: 5px;
+    border-radius: 50%;
+}
+
+/* navigation links */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -18,18 +42,7 @@ body {
     color: #171719;
 }
 
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #f8f9fb;
-}
-
+/*News Entries Column*/
 .card {
     border: none;
     background-color: transparent;
@@ -52,6 +65,24 @@ body {
     text-transform: uppercase;
 }
 
+.post-link {
+    text-decoration: none;
+    color: #052241;
+}
+
+.post-link:hover {
+    color: #481404;
+}
+
+.page-link {
+    color:#052241
+}
+
+.page-link:hover {
+    color:#97250e
+}
+
+/* post details */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -86,23 +117,6 @@ body {
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #052241;
-}
-
-.post-link:hover {
-    color: #481404;
-}
-
-.page-link {
-    color:#052241
-}
-
-.page-link:hover {
-    color:#97250e
-}
-
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
@@ -113,6 +127,7 @@ body {
     color: lightgray;
 }
 
+/* signup form */
 .btn-signup {
     background-color: #138197;
     color: #fff;
@@ -135,6 +150,7 @@ body {
     text-decoration: underline;
 }
 
+/* Post like */
 .btn-like {
     color: #585655;
     border: none;

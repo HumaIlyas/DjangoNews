@@ -4,6 +4,7 @@
 
 {% load crispy_forms_tags %}
 
+<!-- post details -->
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -35,6 +36,8 @@
                 <p class="card-text ">
                     {{ post.content | safe }}
                 </p>
+
+                <!-- Post like and comment -->
                 <div class="row">
 
                     <div class="col-1">
