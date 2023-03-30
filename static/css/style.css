@@ -127,26 +127,31 @@ body {
     color: lightgray;
 }
 
-/* signup form */
+/* login, logout & signup form */
+.btn-login, 
+.btn-logout, 
 .btn-signup {
     background-color: #138197;
     color: #fff;
 }
-
+.btn-login:hover,
+.btn-logout:hover,
 .btn-signup:hover,
+.btn-login:active, 
+.btn-logout:active,
 .btn-signup:active {
-    background-color: #862020;
+    background-color: #094c59;
     color: #d6e2e2;
 }
 
 .link {
-    color: #23BBBB;
+    color: #0a9292;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: rgb(109, 10, 10);
     text-decoration: underline;
 }
 
