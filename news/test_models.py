@@ -100,7 +100,7 @@ class TestComment(TestCase):
             post=self.post,
             name='Test name',
             email='test@email.com',
-            body='Test body',
+            comment='Test comment',
             approved=False
         )
 
@@ -108,7 +108,7 @@ class TestComment(TestCase):
             post=self.post,
         )
         Post = Comment({'post': ''})
-        self.assertEqual(comment.__str__(), f"Comment {comment.body} by {comment.name}")
+        self.assertEqual(comment.__str__(), f"Comment {comment.comment} by {comment.name}")
         self.assertEqual(str(comment.email), 'test@email.com')
         self.assertEqual(str(comment.approved), 'False')
 

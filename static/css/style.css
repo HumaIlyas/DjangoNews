@@ -19,7 +19,8 @@ body {
 }
 
 /* logo */
-.logo {
+#logo {
+    float: right;
     height: 40px;
     padding-right: 5px;
     border-radius: 50%;

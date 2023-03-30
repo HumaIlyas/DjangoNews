@@ -44,7 +44,7 @@ class Comment(models.Model):
                              related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    body = models.TextField()
+    comment = models.TextField()
     comments = models.ManyToManyField(User, related_name='post_comment', blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
@@ -53,4 +53,4 @@ class Comment(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        return f"Comment {self.body} by {self.name}"
+        return f"Comment {self.comment} by {self.name}"

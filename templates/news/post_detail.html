@@ -97,13 +97,13 @@
                         </span> wrote:
                     </p>
                     <!-- The body of the comment goes before the | -->
-                    {{ comment.body | linebreaks }}
+                    {{ comment.comment | linebreaks }}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
         </div>
-        <div class="col-md-6 card mb-4  mt-3 ">
+        <div class="col-md-6 card mb-4  mt-3">
             <div class="card-body">
                 <!-- For later -->
                 {% if commented %}
