@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500&family=Oswald:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@400&display=swap");
 
 /* body */
 body {
@@ -10,8 +10,8 @@ body {
     background-color: #fff;
 }
 
-.dark-bg {
-    background-color: #445261;
+.colored-bg {
+    background-color: #75dcdc;
 }
 
 .main-bg {
@@ -128,6 +128,10 @@ body {
 }
 
 /* login, logout & signup form */
+.black {
+    color: #171719;
+}
+
 .btn-login, 
 .btn-logout, 
 .btn-signup {
@@ -167,4 +171,14 @@ body {
     color: #363534;
     background: transparent;
     border: none;
+}
+
+/* footer */
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 100%;
+    color: rgb(109, 10, 10);
 }
