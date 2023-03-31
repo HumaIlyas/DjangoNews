@@ -280,6 +280,33 @@ The automated testing includes all the testing that is carried out by a program.
     <img src="assets/images/accessibility-mobile.jpg" alt="Accessibility on mobile">
 </div>
 
+### Running python testing
+Django testing was done for forms.py, models.py and views.py. Test were run OK.
+
+* forms.py
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/test-forms.jpg" alt="Test forms">
+</div>
+
+* models.py
+
+div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/test-models.jpg" alt="Test models">
+</div>
+
+* views.py
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/test-views.jpg" alt="Test views">
+</div>
+
+### Coverage of python testing
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/coverage.jpg" alt="Coverage">
+</div>
+
 ## Manual testing
 
 ### Testing User Stories
