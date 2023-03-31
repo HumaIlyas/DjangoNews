@@ -208,7 +208,7 @@ On the post details page after leaving the comment on a news, the mesaage will a
 ___
 # Technologies used
 
-Different technologies were used to complete the contents of Yoga For Self-Improvement website.
+Different technologies were used to complete the contents of World news website.
 
 ### GitHub
 * As a software hosting platform to keep project in a remote location.
@@ -312,15 +312,20 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
  
 ## Compatibility testing
-The website was tested across multiple virtual mobile devices and browsers.
+The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the world news and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
+
+Below are the list of Internet Browsers that were used to test the display of the website:
+* Google Chrome
+* Microsoft Edge
+* Internet Explorer
+Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
 
 ## Issues found during site development
 
-### Horizontal scroll bar on the bottom of the screen
-* Horizontal scroll bar appeared on the bottom of the screen while adding different sections on the pages.<br>
+### navigation link for news categories
+* The list of different categories of news was opened on the side of the page instead of below the news categories navigation link.<br>
 I adjusted this issue:
-   * By adding a code "margin: 0 auto" in about-us and prices section.
-   * By adding a code "overflow-x: hidden" in the body.
+   * 
 
 [Back to Table of contents](#table-of-contents)
 
