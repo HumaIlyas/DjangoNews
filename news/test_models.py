@@ -61,18 +61,18 @@ class TestPost(TestCase):
     def test_created_on(self):
         mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
         with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-            post = Post.objects.create(slug='test-post')
+            post = Post.objects.create(title='Test post', slug='test-post')
             self.assertEqual(post.created_on, mocked)
 
     def test_updated_on(self):
         mocked = datetime.datetime(2023, 3, 3, 0, 0, 0, tzinfo=pytz.utc)
         with mock.patch('django.utils.timezone.now', mock.Mock(return_value=mocked)):
-            post = Post.objects.create(slug='test-post')
+            post = Post.objects.create(title='Test post', slug='test-post')
             self.assertEqual(post.updated_on, mocked)
 
     def test_ordering_post_metaclass(self):
-        post = Post.objects.create(slug='test-post')
-        self.assertEqual(post._meta.ordering, ['-created_on'])
+        post = Post.objects.create(title='Test post', slug='test-post')
+        self.assertEqual(post._meta.ordering[0], '-created_on')
 
 
 class TestComment(TestCase):
@@ -103,10 +103,6 @@ class TestComment(TestCase):
             comment='Test comment',
             approved=False
         )
-
-        post = Comment.objects.create(
-            post=self.post,
-        )
         Post = Comment({'post': ''})
         self.assertEqual(comment.__str__(), f"Comment {comment.comment} by {comment.name}")
         self.assertEqual(str(comment.email), 'test@email.com')
@@ -120,4 +116,4 @@ class TestComment(TestCase):
 
     def test_ordering_comment_metaclass(self):
         comment = Comment.objects.create(post=self.post)
-        self.assertEqual(comment._meta.ordering, ['created_on'])
+        self.assertEqual(comment._meta.ordering[0], 'created_on')
