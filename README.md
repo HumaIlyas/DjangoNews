@@ -67,6 +67,7 @@ The main goals of the website user are
 * View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days
 * View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community
 * Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content
+* Categorize the news: As a site user/site owner I can view the list of news based on their category
 * Create draft news: As a site owner I can create draft news so that I can finish writing the content later on
 * Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments
 
@@ -282,6 +283,14 @@ The automated testing includes all the testing that is carried out by a program.
 
 ### Testing User Stories
 
+### As a site user/site owner
+* View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days
+* View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community
+* Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content
+* Categorize the news: As a site user/site owner I can view the list of news based on their category
+* Create draft news: As a site owner I can create draft news so that I can finish writing the content later on
+* Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments
+
 ### As a site user
 * Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
 * View the news list: As a site user I can view the list of news so that I can select the one to read
@@ -294,19 +303,20 @@ The automated testing includes all the testing that is carried out by a program.
 | :--- | :--- | :--- |
 | `As a site user/site owner` |
 |  |  |  |
-| View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days | Under each news, the number of likes are shown on the home page for the site user/site owner  to see the most popular news |  |
-| View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community | Under each news, the number of comments are shown on th home page. However to read the comments, the site user should open the full text of the news |  |
-| Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content |  |  |
-| Create draft news: As a site owner I can create draft news so that I can finish writing the content later on |  |  |
-| Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments |  |  |
+| View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days | Under each news, the number of likes are shown on the home page |  |
+| View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community | Under each news, the number of comments are shown on th home page. However to read the comments, the site user should open the full text of the news. Unser the details of the news on left side is the comments list and on the right side is the comment box to leave the comment. |  |
+| Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content | The site owner can create, read, update and delete posts after login to admin account. The post model is created with the functions to create, read, update and delete posts |  |
+| Categorize the news: As a site user/site owner I can view the list of news based on their category | In the navbar is a link for news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news according to their category of interest |  |
+| Create draft news: As a site owner I can create draft news so that I can finish writing the content later on | The site owner can create dreft news after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on |  |
+| Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments | The site owner can approve or disapprove comments so that I can filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |  |
 | `As a site user` |  |  |
 |  |  |  |
-| Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view |  |  |
-| View the news list: As a site user I can view the list of news so that I can select the one to read |  |  |
-| Open the news: As a site user I can click on the title of the news so that I can read the full text about that news |  |  |
-| Account registration: As a site user I can register an account so that I can comment and like the news |  |  |
-| Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community |  |  |
-| Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news |  |  |
+| Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view | Site user can view a paginated list of news on the home page to easily select the news to view |  |
+| View the news list: As a site user I can view the list of news so that I can select the one to read | Site user can view the list of news on the home page and on the individual category of the news pages to select the one to read |  |
+| Open the news: As a site user I can click on the title of the news so that I can read the full text about that news | Site user can click on the title of the news to read the full text about that news  |  |
+| Account registration: As a site user I can register an account so that I can comment and like the news | In the navbar is a link for register an account so that site user can leave a comment and like the news |  |
+| Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community | After creating an account the site user can leave a comment on the news in the comments section on the post detail page |  |
+| Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news | After creating an account the site user can like the news by clicking on the icon of hand on the post detail page |  |
 
 - - -
 
