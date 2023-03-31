@@ -32,10 +32,14 @@ ___
 - [Approval of comment](#approval-of-comment)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
-    - [Code validation](#code-validation)
+    - [Automated testing](#automated-testing)
+        - [Code validation](#code-validation)
+        - [Performance testing](#performance-testing)
+    - [Manual testing](#manual-testing)
+      - [Testing User Stories](#testing-user-stories)
+      - [Full Testing](#full-testing)
     - [Functionality testing](#functionality-testing)
     - [Compatibility testing](#compatibility-testing)
-    - [Performance testing](#performance-testing)
     - [Issues found during site development](#issues-found-during-site-development)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -59,20 +63,20 @@ The main goals of the website user are
 
 ## User stories
 
-### As a website owner
-* View likes: As a Site User/Admin I can view the number of likes on each news so that I can see which is the most popular or viral
-* View comments: As a Site User/Admin I can view comments on an individual news so that I can read the conversation
-* Manage news: As a Site Admin I can create, read, update and delete posts so that I can manage my news content
-* Create draft news: As a Site Admin I can create draft news so that I can finish writing the content later
-* Approve comments: As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+### As a site user/site owner
+* View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days
+* View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community
+* Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content
+* Create draft news: As a site owner I can create draft news so that I can finish writing the content later on
+* Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments
 
-### As a new customer
-* Site pagination: As a Site User I can view a paginated list of news so that easily select a news to view
-* View news list: As a Site User I can view a list of news so that I can select one to read
-* Open a news: As a Site User I can click on a post so that I can read the full text
-* Account registration: As a Site User I can register an account so that I can comment and like
-* Comment on a news: As a Site User I can leave comments on a news so that I can be involved in the conversation
-* Like/Unlike: As a Site User I can like or unlike a news so that I can interact with the content
+### As a site user
+* Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
+* View the news list: As a site user I can view the list of news so that I can select the one to read
+* Open the news: As a site user I can click on the title of the news so that I can read the full text about that news
+* Account registration: As a site user I can register an account so that I can comment and like the news
+* Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community
+* Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news
 
 ## Structure of the website
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
@@ -93,7 +97,6 @@ Main colours used in the development of Yoga For Self-Improvement:
 
 ### Fonts 
 * As a main font lato and as a backup font sans-serif are used for the contents of the website.
-* As a main font Oswald and as a backup font sans-serif are used for the headings of the website.
 
 ### Images
 * Images are taken from [Google Images](https://images.google.nl/), which is credited in the [credits](#credits) section.
@@ -243,28 +246,24 @@ Different technologies were used to complete the contents of Yoga For Self-Impro
 ___
 # Testing
 
-## Code validation
-World News is validated for a code using four websites.
+## Automated testing 
+The automated testing includes all the testing that is carried out by a program. World News is validated for a code using four websites ([W3C HTML Validator](https://validator.w3.org/); [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/); [JSHint JavaScript Validator](https://jshint.com/); [PEP8 online validator](http://pep8ci.herokuapp.com/#)), and performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool.
 
-### HTML
+### Code validation
+
+#### HTML
 * No errors were found when passing through the official [W3C HTML Validator](https://validator.w3.org/)
 
-### CSS
+#### CSS
 * No errors were found when passing through the official [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/)
 
-### JavaScript
+#### JavaScript
 * No errors were found when passing through the official [JSHint JavaScript Validator](https://jshint.com/)
 
-### Python
+#### Python
 * No errors were found when passing through the official [PEP8 online validator](http://pep8ci.herokuapp.com/#)
 
-## Functionality testing
-Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
- 
-## Compatibility testing
-The website was tested across multiple virtual mobile devices and browsers.
-
-## Performance testing
+### Performance testing
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool was used to check the performance of the website.
 * Couple of changes were made to improve the performance.
 
@@ -278,6 +277,47 @@ The website was tested across multiple virtual mobile devices and browsers.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/accessibility-mobile.jpg" alt="Accessibility on mobile">
 </div>
+
+## Manual testing
+
+### Testing User Stories
+
+### As a site user
+* Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
+* View the news list: As a site user I can view the list of news so that I can select the one to read
+* Open the news: As a site user I can click on the title of the news so that I can read the full text about that news
+* Account registration: As a site user I can register an account so that I can comment and like the news
+* Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community
+* Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news
+
+| Goals | How are they achieved? | Image |
+| :--- | :--- | :--- |
+| `As a site user/site owner` |
+|  |  |  |
+| View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days | Under each news, the number of likes are shown on the home page for the site user/site owner  to see the most popular news |  |
+| View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community | Under each news, the number of comments are shown on th home page. However to read the comments, the site user should open the full text of the news |  |
+| Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content |  |  |
+| Create draft news: As a site owner I can create draft news so that I can finish writing the content later on |  |  |
+| Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments |  |  |
+| `As a site user` |  |  |
+|  |  |  |
+| Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view |  |  |
+| View the news list: As a site user I can view the list of news so that I can select the one to read |  |  |
+| Open the news: As a site user I can click on the title of the news so that I can read the full text about that news |  |  |
+| Account registration: As a site user I can register an account so that I can comment and like the news |  |  |
+| Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community |  |  |
+| Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news |  |  |
+
+- - -
+
+
+
+### Full Testing
+## Functionality testing
+Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
+ 
+## Compatibility testing
+The website was tested across multiple virtual mobile devices and browsers.
 
 ## Issues found during site development
 
