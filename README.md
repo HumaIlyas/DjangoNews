@@ -73,6 +73,7 @@ The main goals of the website user are
 
 ### As a site user
 * Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
+* Easy navigation: As a site User I can easily navigate around the different pages of the website 
 * View the news list: As a site user I can view the list of news so that I can select the one to read
 * Open the news: As a site user I can click on the title of the news so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
@@ -293,6 +294,7 @@ The automated testing includes all the testing that is carried out by a program.
 
 ### As a site user
 * Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
+* Easy navigation: As a site User I can easily navigate around the different pages of the website
 * View the news list: As a site user I can view the list of news so that I can select the one to read
 * Open the news: As a site user I can click on the title of the news so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
@@ -303,8 +305,8 @@ The automated testing includes all the testing that is carried out by a program.
 | :--- | :--- | :--- |
 | `As a site user/site owner` |
 |  |  |  |
-| View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days | Under each news, the number of likes are shown on the home page |  |
-| View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community | Under each news, the number of comments are shown on th home page. However to read the comments, the site user should open the full text of the news. Unser the details of the news on left side is the comments list and on the right side is the comment box to leave the comment. |  |
+| View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days | Under each news, the number of likes are shown on the home page | <img src="static/images/view-likes.jpg" alt="View likes"> |
+| View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community | Under each news, the number of comments are shown on th home page. However to read the comments, the site user should open the full text of the news. Unser the details of the news on left side is the comments list and on the right side is the comment box to leave the comment. | <img src="static/images/view-comments.jpg" alt=" View comments"> |
 | Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content | The site owner can create, read, update and delete posts after login to admin account. The post model is created with the functions to create, read, update and delete posts |  |
 | Categorize the news: As a site user/site owner I can view the list of news based on their category | In the navbar is a link for news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news according to their category of interest |  |
 | Create draft news: As a site owner I can create draft news so that I can finish writing the content later on | The site owner can create dreft news after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on |  |
@@ -312,6 +314,7 @@ The automated testing includes all the testing that is carried out by a program.
 | `As a site user` |  |  |
 |  |  |  |
 | Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view | Site user can view a paginated list of news on the home page to easily select the news to view |  |
+| Easy navigation: As a site User I can easily navigate around the different pages of the website | A navigation bar is provided on each page to easily navigate around the different pages of the website |  |
 | View the news list: As a site user I can view the list of news so that I can select the one to read | Site user can view the list of news on the home page and on the individual category of the news pages to select the one to read |  |
 | Open the news: As a site user I can click on the title of the news so that I can read the full text about that news | Site user can click on the title of the news to read the full text about that news  |  |
 | Account registration: As a site user I can register an account so that I can comment and like the news | In the navbar is a link for register an account so that site user can leave a comment and like the news |  |
@@ -319,8 +322,6 @@ The automated testing includes all the testing that is carried out by a program.
 | Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news | After creating an account the site user can like the news by clicking on the icon of hand on the post detail page |  |
 
 - - -
-
-
 
 ### Full Testing
 ## Functionality testing
