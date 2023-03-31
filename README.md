@@ -285,9 +285,9 @@ The automated testing includes all the testing that is carried out by a program.
 ### Testing User Stories
 Meeting the needs of the [User stories](#user-stories) as described in the UX section of this README document.
 
-| Goals as a site user/site owner | Steps to achieve them | Image |
+| User stories/Goals | Steps to achieve them | Image |
 | :--- | :--- | :--- |
-| [As a site user/site owner](#as-a-site-usersite-owner) |  |  |
+| [As a site user/site owner](#as-a-site-usersite-owner) |
 |  |  |  |
 | View likes | Under each news, the total number of likes are shown on the home page and pages for individaul categories of the news so that site user/site owner can see which is the most popular or viral news these days | <img src="static/images/view-likes.jpg" alt="View likes"> |
 | View comments | Under each news, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news so that site user can read the conversation among the community. Under the details of the news, on left side is the list of the comments and on the right side is the comment box to leave the comment | <img src="static/images/view-comments.jpg" alt=" View comments"> |
@@ -295,7 +295,7 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 | Categorize the news | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news according to their category of interest | <img src="static/images/categorize-the-news.jpg" alt="Categorize the news"> |
 | Create draft news | The site owner can create dreft news after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on | <img src="static/images/create-draft-news.jpg" alt="Create draft news"> |
 | Approve comments | The site owner can approve or disapprove comments to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the news detail page. | <img src="static/images/approve-comments.jpg" alt="Approve comments"> |
-| [As a site user](#as-a-site-user) |  |  |
+| [As a site user](#as-a-site-user) |
 |  |  |  |
 | Site pagination | Site user can view a paginated list of news on the home page to easily select the news to view | <img src="static/images/site-pagination.jpg" alt="Site pagination"> |
 | Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website | <img src="static/images/easy-navigation.jpg" alt="Easy navigation"> |
