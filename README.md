@@ -65,7 +65,7 @@ The main goals of the website user are
 
 ### As a site user/site owner
 * Manage posts: As a site owner I can create, read, update and delete posts so that I can manage my news content
-* Categorize a post: As a site user/site owner I can view the list of posts based on their category
+* Categorize a post: As a site owner I can categorize a post so that I/site user can view the list of posts based on their category
 * Create draft posts: As a site owner I can create draft posts so that I can finish writing the content later on
 * View likes: As a site user/site owner I can view the number of likes on each post so that I can see which is the most popular or viral news these days
 * View comments: As a site user/site owner I can view comments on an individual post so that I can read the conversation among the community
