@@ -78,7 +78,7 @@ The main goals of the website user are
 * Open a post: As a site user I can click on the title of the post so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
 * Comment on a post: As a site user I can leave comments on the posts so that I can be involved in the conversation with the community
-* Like/Unlike a post: As a site user I can like or unlike a post so that I can interact with the content and share my feelings about that news
+* Like a post: As a site user I can like a post so that I can interact with the content and share my feelings about that news
 
 ## Structure of the website
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
@@ -331,7 +331,7 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 | Open a post | Site user can click on the title of the news post to read the full text about that news. |
 | Account registration | In the navigation bar is a link to register an account so that site user can leave a comment and like/unlike the news. |
 | Comment on a post | After creating an account the site user can leave a comment on the news post in the comments section on the post detail page to be involved in the conversation with the community. |
-| Like/Unlike a post | After creating an account the site user can like the news post by clicking on the icon of hand on the post detail page to interact with the content and to share his/her feelings about that news. |
+| Like a post | After creating an account the site user can like the news post by clicking on the icon of hand on the post detail page to interact with the content and to share his/her feelings about that news. |
 
 - - -
 
