@@ -322,7 +322,7 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 | Categorize a post | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news posts according to their category of interest. |
 | Create draft posts | The site owner can create draft posts after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on. |
 | Approve comments | The site owner can approve or disapprove comments on each post to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |
-| :--- | :--- |
+|  |  |
 | [As a site user](#as-a-site-user) |
 |  |  |
 | Site pagination | Site user can view a paginated list of posts on the home page to easily select a post to view. |
