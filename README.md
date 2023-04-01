@@ -72,8 +72,8 @@ The main goals of the website user are
 * Approve comments: As a site owner I can approve or disapprove comments on each post so that I can filter out the objectionable comments
 
 ### As a site user
-* Site pagination: As a site user I can view a paginated list of posts so that I can easily select the post to view
-* Easy navigation: As a site user I can view a navigation bar so that I can easily navigate around the different pages of the website 
+* Easy navigation: As a site user I can view a navigation bar so that I can easily navigate around the different pages of the website
+* Site pagination: As a site user I can view a paginated list of posts so that I can easily select the post to view 
 * View post list: As a site user I can view the list of posts so that I can select the one to read
 * Open a post: As a site user I can click on the title of the post so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
@@ -325,8 +325,8 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 |  |  |
 | [As a site user](#as-a-site-user) |
 |  |  |
-| Site pagination | Site user can view a paginated list of posts on the home page to easily select a post to view. |
 | Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website. |
+| Site pagination | Site user can view a paginated list of posts on the home page to easily select a post to view. |
 | View post list | Site user can view the list of posts on the home page and on the individual category of the news pages to select the one to read. |
 | Open a post | Site user can click on the title of the news post to read the full text about that news. |
 | Account registration | In the navigation bar is a link to register an account so that site user can leave a comment and like/unlike the news. |
