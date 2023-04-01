@@ -314,7 +314,7 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 
 | User stories/Goals | Steps to achieve them |
 | :--- | :--- |
-| [As a site user/site owner](#as-a-site-usersite-owner) |
+| [As a site user/site owner        ](#as-a-site-usersite-owner) |
 |  |  |
 | View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
 | View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
