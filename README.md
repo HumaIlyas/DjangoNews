@@ -73,7 +73,7 @@ The main goals of the website user are
 
 ### As a site user
 * Site pagination: As a site user I can view a paginated list of posts so that I can easily select the post to view
-* Easy navigation: As a site user I can easily navigate around the different pages of the website 
+* Easy navigation: As a site user I can view a navigation bar so that I can easily navigate around the different pages of the website 
 * View post list: As a site user I can view the list of posts so that I can select the one to read
 * Open a post: As a site user I can click on the title of the post so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
