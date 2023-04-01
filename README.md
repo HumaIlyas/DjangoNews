@@ -346,7 +346,7 @@ Below are the list of Internet Browsers that were used to test the display of th
 * Google Chrome
 * Microsoft Edge
 * Internet Explorer
-Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
+</br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
 
 ## Issues found during site development
 
