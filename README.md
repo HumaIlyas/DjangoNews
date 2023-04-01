@@ -64,11 +64,11 @@ The main goals of the website user are
 ## User stories
 
 ### As a site user/site owner
-* View likes: As a site user/site owner I can view the number of likes on each post so that I can see which is the most popular or viral news these days
-* View comments: As a site user/site owner I can view comments on an individual post so that I can read the conversation among the community
 * Manage posts: As a site owner I can create, read, update and delete posts so that I can manage my news content
 * Categorize a post: As a site user/site owner I can view the list of posts based on their category
 * Create draft posts: As a site owner I can create draft posts so that I can finish writing the content later on
+* View likes: As a site user/site owner I can view the number of likes on each post so that I can see which is the most popular or viral news these days
+* View comments: As a site user/site owner I can view comments on an individual post so that I can read the conversation among the community
 * Approve comments: As a site owner I can approve or disapprove comments on each post so that I can filter out the objectionable comments
 
 ### As a site user
@@ -316,11 +316,11 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 | :--- | :--- |
 | [As a site user/site owner        ](#as-a-site-usersite-owner) |
 |  |  |
-| View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
-| View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
 | Manage posts | The site owner can create, read, update and delete posts after login to admin account to manage the news content. The post model is created with the functions to create, read, update and delete posts. |
 | Categorize a post | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news posts according to their category of interest. |
 | Create draft posts | The site owner can create draft posts after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on. |
+| View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
+| View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
 | Approve comments | The site owner can approve or disapprove comments on each post to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |
 |  |  |
 | [As a site user](#as-a-site-user) |
