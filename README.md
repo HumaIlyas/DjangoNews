@@ -313,7 +313,7 @@ div style="margin-top: 20px; margin-bottom: 20px;">
 Meeting the needs of the [User stories](#user-stories) as described in the UX section of this README document.
 
 | User stories/Goals | Steps to achieve them |
-| :--- | :--- |
+|  |  |
 | [As a site user/site owner        ](#as-a-site-usersite-owner) |
 |  |  |
 | View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
