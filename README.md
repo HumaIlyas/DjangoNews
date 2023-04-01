@@ -64,21 +64,21 @@ The main goals of the website user are
 ## User stories
 
 ### As a site user/site owner
-* View likes: As a site user/site owner I can view the number of likes on each news so that I can see which is the most popular or viral news these days
-* View comments: As a site user/site owner I can view comments on an individual news so that I can read the conversation among the community
-* Manage the news: As a site owner I can create, read, update and delete posts so that I can manage my news content
-* Categorize the news: As a site user/site owner I can view the list of news based on their category
-* Create draft news: As a site owner I can create draft news so that I can finish writing the content later on
-* Approve comments: As a site owner I can approve or disapprove comments so that I can filter out the objectionable comments
+* View likes: As a site user/site owner I can view the number of likes on each post so that I can see which is the most popular or viral news these days
+* View comments: As a site user/site owner I can view comments on an individual post so that I can read the conversation among the community
+* Manage posts: As a site owner I can create, read, update and delete posts so that I can manage my news content
+* Categorize a post: As a site user/site owner I can view the list of posts based on their category
+* Create draft posts: As a site owner I can create draft posts so that I can finish writing the content later on
+* Approve comments: As a site owner I can approve or disapprove comments on each post so that I can filter out the objectionable comments
 
 ### As a site user
-* Site pagination: As a site user I can view a paginated list of news so that I can easily select the news to view
-* Easy navigation: As a site User I can easily navigate around the different pages of the website 
-* View the news list: As a site user I can view the list of news so that I can select the one to read
-* Open the news: As a site user I can click on the title of the news so that I can read the full text about that news
+* Site pagination: As a site user I can view a paginated list of posts so that I can easily select the post to view
+* Easy navigation: As a site user I can easily navigate around the different pages of the website 
+* View post list: As a site user I can view the list of posts so that I can select the one to read
+* Open a post: As a site user I can click on the title of the post so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
-* Comment on the news: As a site user I can leave comments on the news so that I can be involved in the conversation with the community
-* Like the news: As a site user I can like the news so that I can interact with the news content and share my feelings about that news
+* Comment on a post: As a site user I can leave comments on the posts so that I can be involved in the conversation with the community
+* Like/Unlike a post: As a site user I can like or unlike a post so that I can interact with the content and share my feelings about that news
 
 ## Structure of the website
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
@@ -312,25 +312,26 @@ div style="margin-top: 20px; margin-bottom: 20px;">
 ### Testing User Stories
 Meeting the needs of the [User stories](#user-stories) as described in the UX section of this README document.
 
-| User stories/Goals | Steps to achieve them | Image |
-| :--- | :--- | :--- |
+| User stories/Goals | Steps to achieve them |
+| :--- | :--- |
 | [As a site user/site owner](#as-a-site-usersite-owner) |
-|  |  |  |
-| View likes | Under each news, the total number of likes are shown on the home page and pages for individaul categories of the news so that site user/site owner can see which is the most popular or viral news these days | <img src="static/images/view-likes.jpg" alt="View likes"> |
-| View comments | Under each news, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news so that site user can read the conversation among the community. Under the details of the news, on left side is the list of the comments and on the right side is the comment box to leave the comment | <img src="static/images/view-comments.jpg" alt=" View comments"> |
-| Manage the news | The site owner can create, read, update and delete posts after login to admin account to manage the news content. The post model is created with the functions to create, read, update and delete posts | <img src="static/images/manage-the-news.jpg" alt="Manage the news"> |
-| Categorize the news | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news according to their category of interest | <img src="static/images/categorize-the-news.jpg" alt="Categorize the news"> |
-| Create draft news | The site owner can create dreft news after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on | <img src="static/images/create-draft-news.jpg" alt="Create draft news"> |
-| Approve comments | The site owner can approve or disapprove comments to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the news detail page. | <img src="static/images/approve-comments.jpg" alt="Approve comments"> |
+|  |  |
+| View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
+| View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
+| Manage posts | The site owner can create, read, update and delete posts after login to admin account to manage the news content. The post model is created with the functions to create, read, update and delete posts. |
+| Categorize a post | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news posts according to their category of interest. |
+| Create draft posts | The site owner can create draft posts after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on. |
+| Approve comments | The site owner can approve or disapprove comments on each post to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |
+| :--- | :--- |
 | [As a site user](#as-a-site-user) |
-|  |  |  |
-| Site pagination | Site user can view a paginated list of news on the home page to easily select the news to view | <img src="static/images/site-pagination.jpg" alt="Site pagination"> |
-| Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website | <img src="static/images/easy-navigation.jpg" alt="Easy navigation"> |
-| View the news list | Site user can view the list of news on the home page and on the individual category of the news pages to select the one to read | <img src="static/images/view-the-news-list.jpg" alt="View the news list"> |
-| Open the news | Site user can click on the title of the news to read the full text about that news  | <img src="static/images/open-the-news.jpg" alt="Open the news"> |
-| Account registration | In the navigation bar is a link to register an account so that site user can leave a comment and like the news | <img src="static/images/account-registration.jpg" alt="Account registration"> |
-| Comment on the news | After creating an account the site user can leave a comment on the news in the comments section on the news detail page to be involved in the conversation with the community| <img src="static/images/comment-on-the-news.jpg" alt="Comment on the news"> |
-| Like the news | After creating an account the site user can like the news by clicking on the icon of hand on the news detail page to interact with the news content and to share his/her feelings about that news | <img src="static/images/like-the-news.jpg" alt="Like the news"> |
+|  |  |
+| Site pagination | Site user can view a paginated list of posts on the home page to easily select a post to view. |
+| Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website. |
+| View post list | Site user can view the list of posts on the home page and on the individual category of the news pages to select the one to read. |
+| Open a post | Site user can click on the title of the news post to read the full text about that news. |
+| Account registration | In the navigation bar is a link to register an account so that site user can leave a comment and like/unlike the news. |
+| Comment on a post | After creating an account the site user can leave a comment on the news post in the comments section on the post detail page to be involved in the conversation with the community. |
+| Like/Unlike a post | After creating an account the site user can like the news post by clicking on the icon of hand on the post detail page to interact with the content and to share his/her feelings about that news. |
 
 - - -
 
