@@ -37,10 +37,10 @@
                     {{ post.content | safe }}
                 </p>
 
-                <!-- Post like and comment -->
+                <!-- Post like, unlike and comment -->
                 <div class="row">
 
-                    <div class="col-1">
+                    <div class="col">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
@@ -64,7 +64,8 @@
                         </span>
                         </strong>
                     </div>
-                    <div class="col-1">
+                    
+                    <div class="col">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
