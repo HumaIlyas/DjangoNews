@@ -456,7 +456,7 @@ Chrome developer tools were used throughout the project for testing and solving 
 
 ## Issues found during site development
 
-### navigation link for news categories
+### Navigation link for news categories
 * The list of different categories of news was opened on the side of the page instead of below the news categories navigation link.<br>
 I adjusted this issue:
    * 
