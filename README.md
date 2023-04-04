@@ -4,7 +4,7 @@ World News is a site for users who are interested in reading news of different c
     <img src="assets/images/different-screen-sizes.jpg" alt="Website on different screen sizes">
 </div>
 
-## [View live website](https://humailyas.github.io/****)
+## [View live website](https://ci-fsf-django-news.herokuapp.com/)
 
 ___
 # Table of contents
@@ -29,6 +29,7 @@ ___
     - [Sign in](#sign-in)
     - [Sign out](#sign-out)
     - [News detail](#news-detail)
+    - [Like/Unlike a news post](#like-unlike-a-news-post) 
     - [Submission of comment](#submission-of-comment)
     - [Approval of comment](#approval-of-comment)
 - [Technologies used](#technologies-used)
@@ -480,7 +481,7 @@ The steps for deployment were as follows:
 * Link the Heroku app to the repository
 * Click on Deploy
 
-## [View live website](https://humailyas.github.io/Project-1/)
+## [View live website](https://ci-fsf-django-news.herokuapp.com/)
 
 [Back to Table of contents](#table-of-contents)
 
