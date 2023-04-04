@@ -349,8 +349,6 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 - - -
 
 ### Full Testing
-#### Functionality testing
-Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
  
 #### Compatibility testing
 The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the world news and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
@@ -362,6 +360,9 @@ Below are the list of Internet Browsers that were used to test the display of th
 
 </br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
 
+#### Functionality testing
+Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
+
 #### Navigation bar
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -372,7 +373,6 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
 | Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
 | Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
-
 
 #### Footer
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -418,14 +418,8 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
 | Submission message | User should be confirmed about their submission of a comment | Clicked the submit button | Submission successful message | Pass |
 
-## Approval of comment 
+#### Approval of comment 
 | Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
-
-## Like/Unlike a news post 
-After creating an account the user can like or unlike the news post by click/unclick the icon of hand on the post detail page.
-<div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/like-unlike-news-post.jpg" alt="Like/Unlike news post">
-</div>
 
 #### Like/Unlike a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
