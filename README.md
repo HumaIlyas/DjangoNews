@@ -291,7 +291,7 @@ Django testing was done for forms.py, models.py and views.py. Test were run OK.
 
 * models.py
 
-div style="margin-top: 20px; margin-bottom: 20px;">
+<div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/test-models.jpg" alt="Test models">
 </div>
 
