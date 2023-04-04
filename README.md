@@ -23,10 +23,11 @@ ___
         - [Worklife](#worklife)
         - [Climate](#climate)
         - [Science](#science)
+        - [Environment](#environment)
         - [Business](#sports)
     - [Register](#register)
-    - [Login](#login)
-    - [Logout](#logout)
+    - [Sign in](#sign-in)
+    - [Sign out](#sign-out)
 - [News detail](#news-detail)
 - [Submission of comment](#submission-of-comment)
 - [Approval of comment](#approval-of-comment)
@@ -161,6 +162,12 @@ The footer section is consistent on all pages and includes links to the relevant
     <img src="assets/images/science-page.jpg" alt="Science page">
 </div>
 
+### Environment
+* The news related to environment are on environment page. 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/environment-page.jpg" alt="Environment page">
+</div>
+
 ### Business
 * The news related to business are on business page. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
@@ -173,16 +180,16 @@ Users can register an account so that they can comment and like different catego
     <img src="assets/images/register.jpg" alt="Register">
 </div>
 
-## Login
-After registration users can login so that they can comment and like different categories of news on World News.
+## Sign in
+After registration users can sign in so that they can comment and like different categories of news on World News.
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/login.jpg" alt="Login">
+    <img src="assets/images/sign-in.jpg" alt="Sign in">
 </div>
 
 ## Logout
-After registration users can login so that they can comment and like different categories of news on World News.
+Users can sign out if they would like to be signed out due to security reasons.
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/logout.jpg" alt="Logout">
+    <img src="assets/images/sign-out.jpg" alt="Sign out">
 </div>
 
 ## News detail
