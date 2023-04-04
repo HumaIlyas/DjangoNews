@@ -312,7 +312,7 @@ Django testing was done for forms.py, models.py and views.py. Test were run OK.
 ### Testing User Stories
 Meeting the needs of the [User stories](#user-stories) as described in the UX section of this README document.
 
-### As a site user/site owner
+#### As a site user/site owner
 | Goals | Steps to achieve them |
 | :--- | :--- |
 | Manage posts | The site owner can create, read, update and delete posts after login to admin account to manage the news content. The post model is created with the functions to create, read, update and delete posts. |
@@ -322,7 +322,7 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 | View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
 | Approve comments | The site owner can approve or disapprove comments on each post to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |
 
-### As a site user
+#### As a site user
 | Goals | Steps to achieve them |
 | :--- | :--- |
 | Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website. |
@@ -336,17 +336,70 @@ Meeting the needs of the [User stories](#user-stories) as described in the UX se
 - - -
 
 ### Full Testing
-## Functionality testing
+#### Functionality testing
 Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
  
-## Compatibility testing
+#### Compatibility testing
 The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the world news and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
 
 Below are the list of Internet Browsers that were used to test the display of the website:
 * Google Chrome
 * Microsoft Edge
 * Internet Explorer
+
 </br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
+
+#### Home Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Website title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+#### News categories
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Website title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+#### Registration
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
+| User details | Input of user name and password with optional email | Input of name and password | Name and password added | Pass |
+| Signup button | The user name and password will be sent | Clicked on signup button | Name and password sent | Pass |
+| Signup button - hover effect | Signup button background should change when hovered over to it as suggested | Hover over the button | Signup button displayed the correct styling when hovered over | Pass |
+
+#### Login
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Login | Link directs the user to the login page | Clicked the link | Login page loads | Pass |
+| User details | Input of user name and password with optional email | Input of name and password | Name and password added | Pass |
+| Signin button | The user will be logged in | Clicked on button | Login details sent | Pass |
+| Signin button - hover effect | Signin button background should change when hovered over to it as suggested | Hover over the signin button | Signin button displayed the correct styling when hovered over | Pass |
+
+#### Logout
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Logout | Link directs the user to the logout page | Clicked the link | Logout page loads | Pass |
+| Signout button | The user will be logged in | Clicked on button | Login details sent | Pass |
+| Signout button - hover effect | Signout button background should change when hovered over to it as suggested | Hover over the signout button | Signout button displayed the correct styling when hovered over | Pass |
+
+---
 
 ## Issues found during site development
 
