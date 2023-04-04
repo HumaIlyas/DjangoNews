@@ -109,10 +109,10 @@ Main colours used in the development of Yoga For Self-Improvement:
 ___
 # Features
 
-## Navigation bar
+#### Navigation bar
 The full responsive navigation bar is featured on all the pages to allow for easy navigation from page to page across all devices.
 * On the left side is logo, which can be used as navigation link to the main page.
-* On the left side are also links to the Home, News categories, Register, Login, Logout.
+* On the left side are also links to the Home, News categories, Register, Sign in, Sign out.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/nav-bar.jpg" alt="navigation bar">
 </div>
@@ -355,6 +355,30 @@ Below are the list of Internet Browsers that were used to test the display of th
 * Internet Explorer
 
 </br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
+
+#### Navigation bar
+The full responsive navigation bar is featured on all the pages to allow for easy navigation from page to page across all devices.
+* On the left side is logo, which can be used as navigation link to the main page.
+* On the left side are also links to the Home, News categories, Register, Sign in, Sign out.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Navigation bar | Links direct the user to different pages of the website | Clicked the links | Different pages load | Pass |
+| Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
+| Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
+| News categories | Link directs the user to the individual categories of news | Clicked the link | List of all categories of news opened | Pass |
+| Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
+| Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
+| Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
+
+
+## Footer
+The footer section is consistent on all pages and includes links to the relevant social media sites for World News.
+* The links will open in a separate tab in a browser to allow easy navigation for the users.
+* The footer is useful for users to get connected with the community for socialization through social networks.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/footer.jpg" alt="Footer">
+</div>
 
 #### Home Page
 
