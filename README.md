@@ -378,26 +378,26 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
-| User details | Input of user name and password with optional email | Input of name and password | Name and password added | Pass |
-| Signup button | The user name and password will be sent | Clicked on signup button | Name and password sent | Pass |
-| Signup button - hover effect | Signup button background should change when hovered over to it as suggested | Hover over the button | Signup button displayed the correct styling when hovered over | Pass |
+| User details | User will be able to input username and password with optional email | Input of username and password | Name and password added | Pass |
+| Send button | The username and password will be sent | Clicked on send button | Username and password sent | Pass |
+| Send button - hover effect | Send button background should change when hovered over to it as suggested | Hover over the send button | Send button displayed the correct styling when hovered over | Pass |
 
-#### Login
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Login | Link directs the user to the login page | Clicked the link | Login page loads | Pass |
-| User details | Input of user name and password with optional email | Input of name and password | Name and password added | Pass |
-| Signin button | The user will be logged in | Clicked on button | Login details sent | Pass |
-| Signin button - hover effect | Signin button background should change when hovered over to it as suggested | Hover over the signin button | Signin button displayed the correct styling when hovered over | Pass |
-
-#### Logout
+#### Sign in
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Logout | Link directs the user to the logout page | Clicked the link | Logout page loads | Pass |
-| Signout button | The user will be logged in | Clicked on button | Login details sent | Pass |
-| Signout button - hover effect | Signout button background should change when hovered over to it as suggested | Hover over the signout button | Signout button displayed the correct styling when hovered over | Pass |
+| Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
+| User details | User will be able to input username and password | Input of username and password | Username and password added | Pass |
+| Sign in button | The user will be able to sign in | Clicked on sign in button | User could sign in | Pass |
+| Sign in button - hover effect | Sign in button background should change when hovered over to it as suggested | Hover over the sign in button | Sign in button displayed the correct styling when hovered over | Pass |
+
+#### Sign out
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
+| Sign out button | The user will be able to sign out | Clicked on sign out button | User could sign out | Pass |
+| Sign out button - hover effect | Sign out button background should change when hovered over to it as suggested | Hover over the sign out button | Sign out button displayed the correct styling when hovered over | Pass |
 
 ---
 
