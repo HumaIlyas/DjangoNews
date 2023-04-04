@@ -420,6 +420,8 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Submission message | User should be confirmed about their submission of a comment | Clicked the submit button | Submission successful message | Pass |
 
 #### Approval of comment 
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
 | Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
 
 #### Like/Unlike a news post
@@ -494,11 +496,11 @@ To complete the contents of WOrld News website, I learned coding and collected t
 * Collected information on good and bad coding practices from:
   * [Write Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
   * [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-* The description on the DjangoBlog provided by the tutor of the Code Institute with [DjangoBlog](****) was useful as well as an inspiration to design World News.
+* The description on the DjangoBlog provided by the tutor of the Code Institute with [Django3Blog](https://github.com/Code-Institute-Solutions/Django3blog) was useful as well as an inspiration to design World News.
 * I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
 
 ## Content
-* The details about the news were found at [News](**********)
+* The details about the news were found at [BBC](https://www.bbc.com/news) and [CNN](https://edition.cnn.com/).
 * The icons used in the World News comments and likes section, and social links were taken from [Font Awesome](https://fontawesome.com/)
 * The code to make the social networks links was taken from [Project](https://github.com/HumaIlyas/Project-1)
 
