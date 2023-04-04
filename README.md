@@ -368,7 +368,7 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
 
 
-## Footer
+#### Footer
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Footer | The footer section is consistent on all pages | Checked footer on all pages | Footer available on different pages | Pass |
@@ -385,11 +385,6 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
 | News posts | User can see six news on one page and new pages are added in case of more than six news | Pages checked | Six news were on one page and then new pages are added in case of more than six news | Pass |
 
-#### News Detail
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
-
 #### News categories
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -401,11 +396,24 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Environment | Link directs the user to the news related to environment| Clicked the link | List of news related to environment opened | Pass |
 | Business | Link directs the user to the news related to business| Clicked the link | List of news related to business opened | Pass |
 
+#### News Detail
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
+
 #### Comment on a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Comment on a news post | User should be able to leave a comment on the news post | Added comment in the comment box | Comment was added | Pass |
+
+#### Submission of comment
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
 | Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
+| Submission message | User should be confirmed about their submission of a comment | Clicked the submit button | Submission successful message | Pass |
+
+## Approval of comment 
+| Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
 
 #### Like/Unlike a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
