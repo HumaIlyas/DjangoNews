@@ -353,7 +353,8 @@ Below are the list of Internet Browsers that were used to test the display of th
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Website title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
+| Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
 
 #### News Details
 
@@ -372,6 +373,20 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Science | Link directs the user to the news related to science | Clicked the link | List of news related to science opened | Pass |
 | Environment | Link directs the user to the news related to environment| Clicked the link | List of news related to environment opened | Pass |
 | Business | Link directs the user to the news related to business| Clicked the link | List of news related to business opened | Pass |
+
+#### Comment on a news post
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Comment on a news post | User should be able to leave a comment on the news post | Added comment in the comment box | Comment was added | Pass |
+| Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
+
+#### Like/Unlike a news post
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Like/Unlike a news post | User should be able to like or unlike a news post | Added comment in the comment box | Comment was added | Pass |
+| Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
 
 #### Registration
 
