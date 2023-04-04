@@ -28,9 +28,9 @@ ___
     - [Register](#register)
     - [Sign in](#sign-in)
     - [Sign out](#sign-out)
-- [News detail](#news-detail)
-- [Submission of comment](#submission-of-comment)
-- [Approval of comment](#approval-of-comment)
+    - [News detail](#news-detail)
+    - [Submission of comment](#submission-of-comment)
+    - [Approval of comment](#approval-of-comment)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
     - [Automated testing](#automated-testing)
@@ -109,7 +109,7 @@ Main colours used in the development of Yoga For Self-Improvement:
 ___
 # Features
 
-#### Navigation bar
+## Navigation bar
 The full responsive navigation bar is featured on all the pages to allow for easy navigation from page to page across all devices.
 * On the left side is logo, which can be used as navigation link to the main page.
 * On the left side are also links to the Home, News categories, Register, Sign in, Sign out.
@@ -186,16 +186,22 @@ After registration users can sign in so that they can comment and like different
     <img src="assets/images/sign-in.jpg" alt="Sign in">
 </div>
 
-## Logout
+## Sign out
 Users can sign out if they would like to be signed out due to security reasons.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/sign-out.jpg" alt="Sign out">
 </div>
 
 ## News detail
-The users can read the detail about the news by clicking on the title of the post. 
+The users can read the detail about the news by clicking on the title of the news post. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/news_detail.jpg" alt="News detail">
+</div>
+
+## Like/Unlike a news post 
+After creating an account the user can like or unlike the news post by click/unclick the icon of hand on the post detail page.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/like-unlike-news-post.jpg" alt="Like/Unlike news post">
 </div>
 
 ## Submission of comment 
@@ -415,11 +421,16 @@ Below are the list of Internet Browsers that were used to test the display of th
 ## Approval of comment 
 | Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
 
+## Like/Unlike a news post 
+After creating an account the user can like or unlike the news post by click/unclick the icon of hand on the post detail page.
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="assets/images/like-unlike-news-post.jpg" alt="Like/Unlike news post">
+</div>
+
 #### Like/Unlike a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Like/Unlike a news post | User should be able to like or unlike a news post | Added comment in the comment box | Comment was added | Pass |
-| Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
+| Like/Unlike a news post | User should be able to like or unlike a news post | Clicked/unclicked the icon of hand on the news detail page | Like or unlike recorded | Pass |
 
 #### Registration
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
