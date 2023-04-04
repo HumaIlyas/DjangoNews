@@ -357,10 +357,6 @@ Below are the list of Internet Browsers that were used to test the display of th
 </br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
 
 #### Navigation bar
-The full responsive navigation bar is featured on all the pages to allow for easy navigation from page to page across all devices.
-* On the left side is logo, which can be used as navigation link to the main page.
-* On the left side are also links to the Home, News categories, Register, Sign in, Sign out.
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Navigation bar | Links direct the user to different pages of the website | Clicked the links | Different pages load | Pass |
@@ -373,28 +369,28 @@ The full responsive navigation bar is featured on all the pages to allow for eas
 
 
 ## Footer
-The footer section is consistent on all pages and includes links to the relevant social media sites for World News.
-* The links will open in a separate tab in a browser to allow easy navigation for the users.
-* The footer is useful for users to get connected with the community for socialization through social networks.
-<div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="assets/images/footer.jpg" alt="Footer">
-</div>
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Footer | The footer section is consistent on all pages | Checked footer on all pages | Footer available on different pages | Pass |
+| Links to social media | Links direct the user to different/relevant social media sites | Clicked the links | Social media sites load | Pass |
+| Link to Facebook | Link directs the user to Facebook | Clicked the link | Facebook loads | Pass |
+| Link to Twitter | Link directs the user to Twitter | Clicked the link | Twitter loads | Pass |
+| Link to Instagram | Link directs the user to Instagram  | Clicked the link | Instagram loads | Pass |
+| Link to Youtube | Link directs the user to Youtube | Clicked the link | Youtube loads | Pass |
 
 #### Home Page
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
 | Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
+| News posts | User can see six news on one page and new pages are added in case of more than six news | Pages checked | Six news were on one page and then new pages are added in case of more than six news | Pass |
 
-#### News Details
-
+#### News Detail
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
 
 #### News categories
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | News categories | Link directs the user to the individual categories of news | Clicked the link | List of all categories of news opened | Pass |
@@ -406,21 +402,18 @@ The footer section is consistent on all pages and includes links to the relevant
 | Business | Link directs the user to the news related to business| Clicked the link | List of news related to business opened | Pass |
 
 #### Comment on a news post
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Comment on a news post | User should be able to leave a comment on the news post | Added comment in the comment box | Comment was added | Pass |
 | Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
 
 #### Like/Unlike a news post
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Like/Unlike a news post | User should be able to like or unlike a news post | Added comment in the comment box | Comment was added | Pass |
 | Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
 
 #### Registration
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
@@ -429,7 +422,6 @@ The footer section is consistent on all pages and includes links to the relevant
 | Send button - hover effect | Send button background should change when hovered over to it as suggested | Hover over the send button | Send button displayed the correct styling when hovered over | Pass |
 
 #### Sign in
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
@@ -438,7 +430,6 @@ The footer section is consistent on all pages and includes links to the relevant
 | Sign in button - hover effect | Sign in button background should change when hovered over to it as suggested | Hover over the sign in button | Sign in button displayed the correct styling when hovered over | Pass |
 
 #### Sign out
-
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
