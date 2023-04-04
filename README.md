@@ -354,24 +354,24 @@ Below are the list of Internet Browsers that were used to test the display of th
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Website title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+
+#### News Details
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
 
 #### News categories
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Website title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| News categories | Link directs the user to the individual categories of news | Clicked the link | List of all categories of news opened | Pass |
+| Sports | Link directs the user to the news related to sports | Clicked the link | List of news related to sports opened | Pass |
+| Worklife | Link directs the user to the news related to worklife | Clicked the link | List of news related to worklife opened | Pass |
+| Climate | Link directs the user to the news related to climate | Clicked the link | List of news related to climate opened | Pass |
+| Science | Link directs the user to the news related to science | Clicked the link | List of news related to science opened | Pass |
+| Environment | Link directs the user to the news related to environment| Clicked the link | List of news related to environment opened | Pass |
+| Business | Link directs the user to the news related to business| Clicked the link | List of news related to business opened | Pass |
 
 #### Registration
 
