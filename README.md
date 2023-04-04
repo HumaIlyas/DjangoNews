@@ -199,13 +199,13 @@ The users can read the detail about the news by clicking on the title of the pos
 </div>
 
 ## Submission of comment 
-The mesaage of successful submission will appear on the post details page after leaving the comment on a news.
+The message of successful submission will appear on the post details page after leaving the comment on a news.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/submission-comment.jpg" alt="Submission comment">
 </div>
 
 ## Approval of comment 
-On the post details page after leaving the comment on a news, the mesaage will appear ti indicate that your comments needs approval.
+On the post details page after leaving the comment on a news, the mesaage will appear to indicate that your comments needs approval.
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/approval-comment.jpg" alt="Approval comment">
 </div>
