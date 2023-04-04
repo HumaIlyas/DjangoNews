@@ -78,7 +78,7 @@ The main goals of the website user are
 * Open a post: As a site user I can click on the title of the post so that I can read the full text about that news
 * Account registration: As a site user I can register an account so that I can comment and like the news
 * Comment on a post: As a site user I can leave comments on the posts so that I can be involved in the conversation with the community
-* Like a post: As a site user I can like a post so that I can interact with the content and share my feelings about that news
+* Like/Unlike a post: As a site user I can like or unlike a post so that I can interact with the content and share my feelings about that news
 
 ## Structure of the website
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
@@ -291,7 +291,7 @@ Django testing was done for forms.py, models.py and views.py. Test were run OK.
 
 * models.py
 
-div style="margin-top: 20px; margin-bottom: 20px;">
+<div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="assets/images/test-models.jpg" alt="Test models">
 </div>
 
@@ -312,41 +312,109 @@ div style="margin-top: 20px; margin-bottom: 20px;">
 ### Testing User Stories
 Meeting the needs of the [User stories](#user-stories) as described in the UX section of this README document.
 
-| User stories/Goals | Steps to achieve them |
+#### As a site user/site owner
+| Goals | Steps to achieve them |
 | :--- | :--- |
-| [As a site user/site owner        ](#as-a-site-usersite-owner) |
-|  |  |
 | Manage posts | The site owner can create, read, update and delete posts after login to admin account to manage the news content. The post model is created with the functions to create, read, update and delete posts. |
 | Categorize a post | In the navigation bar is a link to news categories. After clicking on that link a list of categories will be opened for the site user/site ownner to select the list of the news posts according to their category of interest. |
 | Create draft posts | The site owner can create draft posts after login to admin account. The post model is created with the functions to create draft news and leave the contents to publish them later on. |
 | View likes | Under each post, the total number of likes are shown on the home page and pages for individaul categories of news posts so that site user/site owner can see which is the most popular or viral news these days. |
 | View comments | Under each post, the number of comments are shown on th home page. However, to see the list of the comments, the site user should open the full text of the news post so that site user can read the conversation among the community. Under the details of the news post, on left side is the list of the comments and on the right side is the comment box to leave the comment. |
 | Approve comments | The site owner can approve or disapprove comments on each post to filter out the objectionable comments after login to admin account. The comment model is created with the functions to approve or disapprove comments. The approved comments will be shown on the post detail page. |
-|  |  |
-| [As a site user](#as-a-site-user) |
-|  |  |
+
+#### As a site user
+| Goals | Steps to achieve them |
+| :--- | :--- |
 | Easy navigation | A navigation bar is provided for site user on each page to easily navigate around the different pages of the website. |
 | Site pagination | Site user can view a paginated list of posts on the home page to easily select a post to view. |
 | View post list | Site user can view the list of posts on the home page and on the individual category of the news pages to select the one to read. |
 | Open a post | Site user can click on the title of the news post to read the full text about that news. |
 | Account registration | In the navigation bar is a link to register an account so that site user can leave a comment and like/unlike the news. |
 | Comment on a post | After creating an account the site user can leave a comment on the news post in the comments section on the post detail page to be involved in the conversation with the community. |
-| Like a post | After creating an account the site user can like the news post by clicking on the icon of hand on the post detail page to interact with the content and to share his/her feelings about that news. |
+| Like/Unlike a post | After creating an account the site user can like or unlike the news post by clicking on the icon of hand on the post detail page to interact with the content and to share his/her feelings about that news. |
 
 - - -
 
 ### Full Testing
-## Functionality testing
+#### Functionality testing
 Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
  
-## Compatibility testing
+#### Compatibility testing
 The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the world news and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
 
 Below are the list of Internet Browsers that were used to test the display of the website:
 * Google Chrome
 * Microsoft Edge
 * Internet Explorer
+
 </br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
+
+#### Home Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
+| Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
+
+#### News Details
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
+
+#### News categories
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| News categories | Link directs the user to the individual categories of news | Clicked the link | List of all categories of news opened | Pass |
+| Sports | Link directs the user to the news related to sports | Clicked the link | List of news related to sports opened | Pass |
+| Worklife | Link directs the user to the news related to worklife | Clicked the link | List of news related to worklife opened | Pass |
+| Climate | Link directs the user to the news related to climate | Clicked the link | List of news related to climate opened | Pass |
+| Science | Link directs the user to the news related to science | Clicked the link | List of news related to science opened | Pass |
+| Environment | Link directs the user to the news related to environment| Clicked the link | List of news related to environment opened | Pass |
+| Business | Link directs the user to the news related to business| Clicked the link | List of news related to business opened | Pass |
+
+#### Comment on a news post
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Comment on a news post | User should be able to leave a comment on the news post | Added comment in the comment box | Comment was added | Pass |
+| Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
+
+#### Like/Unlike a news post
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Like/Unlike a news post | User should be able to like or unlike a news post | Added comment in the comment box | Comment was added | Pass |
+| Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
+
+#### Registration
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
+| User details | User will be able to input username and password with optional email | Input of username and password | Name and password added | Pass |
+| Send button | The username and password will be sent | Clicked on send button | Username and password sent | Pass |
+| Send button - hover effect | Send button background should change when hovered over to it as suggested | Hover over the send button | Send button displayed the correct styling when hovered over | Pass |
+
+#### Sign in
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
+| User details | User will be able to input username and password | Input of username and password | Username and password added | Pass |
+| Sign in button | The user will be able to sign in | Clicked on sign in button | User could sign in | Pass |
+| Sign in button - hover effect | Sign in button background should change when hovered over to it as suggested | Hover over the sign in button | Sign in button displayed the correct styling when hovered over | Pass |
+
+#### Sign out
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
+| Sign out button | The user will be able to sign out | Clicked on sign out button | User could sign out | Pass |
+| Sign out button - hover effect | Sign out button background should change when hovered over to it as suggested | Hover over the sign out button | Sign out button displayed the correct styling when hovered over | Pass |
+
+---
 
 ## Issues found during site development
 
@@ -396,7 +464,7 @@ To complete the contents of WOrld News website, I learned coding and collected t
 ## Content
 * The details about the news were found at [News](**********)
 * The icons used in the World News comments and likes section, and social links were taken from [Font Awesome](https://fontawesome.com/)
-* The code to make the social networks links was taken from [Project](*****)
+* The code to make the social networks links was taken from [Project](https://github.com/HumaIlyas/Project-1)
 
 ## Media
 * The images used on the Home and News Categories pages were taken from [Google Images](https://images.google.nl/)
