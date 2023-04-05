@@ -23,8 +23,11 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <nav class="navbar navbar-expand-lg navbar-light light-bg">
-        <div class="container-fluid"> 
-            <a class="navbar-brand" href="{% url 'home' %}"><img id="logo" src="static/images/globe.jpg" alt="logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img id="logo" src="static/images/globe.jpg" alt="logo">
+            </a> 
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <span class="brand">W<span class="orange">o</span>rld<span class="font">|News</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
