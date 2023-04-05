@@ -355,14 +355,14 @@ World News website is meeting the needs of the [User stories](#user-stories) as 
 ### Full Testing
  
 #### Compatibility testing
-The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the world news and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
+The website was tested across multiple devices such as desktop, laptops, tablets, ipads and mobiles, and browsers manually. people were asked to visit the website on a variety of devices, to setup accounts within the World News and to leave their comments and like the news. This feedback was very useful to determine any bugs that may have been present. 
 
-Below are the list of Internet Browsers that were used to test the display of the website:
+Below is the list of Internet Browsers that were used to test the display of the website:
 * Google Chrome
 * Microsoft Edge
 * Internet Explorer
 
-</br>Manual testing was carried out using the above browsers. No bugs or desplay issues could be identified.
+</br>Manual testing was carried out using the above browsers. No bugs or display issues could be identified.
 
 #### Functionality testing
 Chrome developer tools were used throughout the project for testing and solving problems with responsiveness and style issues.
@@ -375,14 +375,14 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
 | News categories | Link directs the user to the individual categories of news | Clicked the link | List of all categories of news opened | Pass |
 | Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
-| Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
-| Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
+| Sign In | Link directs the user to the sign in page | Clicked the link | Sign In page loads | Pass |
+| Sign Out | Link directs the user to the sign Out page | Clicked the link | Sign Out page loads | Pass |
 
 #### Footer
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Footer | The footer section is consistent on all pages | Checked footer on all pages | Footer available on different pages | Pass |
-| Links to social media | Links direct the user to different/relevant social media sites | Clicked the links | Social media sites load | Pass |
+| Links to social media | Links direct the user to different/relevant social media sites (Facebook, Twitter, Instagram, and Youtube) | Clicked the links | Social media sites load | Pass |
 | Link to Facebook | Link directs the user to Facebook | Clicked the link | Facebook loads | Pass |
 | Link to Twitter | Link directs the user to Twitter | Clicked the link | Twitter loads | Pass |
 | Link to Instagram | Link directs the user to Instagram  | Clicked the link | Instagram loads | Pass |
