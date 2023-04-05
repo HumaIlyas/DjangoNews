@@ -423,10 +423,11 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Submit a comment | User should be able to submit a comment | Clicked the submit button | Comment was submitted | Pass |
 | Submission message | User should be confirmed about their submission of a comment | Clicked the submit button | Submission successful message | Pass |
 
-#### Approval of comment 
+#### Approval/Disapproval of comment 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Approval of comment | User should be able to see that their submission needs approval | Comment approved after login to the admin | Message that comment is awaiting approval | Pass |
+| Approval/disapproval of comment | User should be able to see that their comment is approved or not | Comment approved/disapproved after login to the admin | Comment approved/disapproved | Pass |
+| Approval of comment message| User should be able to see the message that their submission needs approval | Comment was submitted | Message appeared that comment is awaiting approval | Pass |
 
 #### Comment list 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -460,6 +461,14 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Sign Out | Link directs the user to the sign out page | Clicked the link | Sign Out page loads | Pass |
 | Sign Out button | The user will be able to sign out | Clicked on sign out button | User could sign out | Pass |
 | Sign Out button - hover effect | Sign Out button background should change when hovered over to it as suggested | Hover over the sign out button | Sign Out button displayed the correct styling when hovered over | Pass |
+
+#### Messages
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign In message | Success message after sign in  | Clicked on sign in button after input of username and password | Success message of sign in appeared | Pass |
+| Sign Out message | Message after sign out | Clicked on sign out button | Message of sign out appeared | Pass |
+| Messages disappear | Messages about sign in and sign out will disappear after 2.5 seconds | Tried to sign in and sign out | Messages disappeared after 2.5 seconds | Pass |
+| Approval of comment message| User should be able to see the message that their submission needs approval | Comment was submitted | Message appeared that comment is awaiting approval | Pass |
 
 ---
 
