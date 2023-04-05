@@ -393,7 +393,7 @@ Chrome developer tools were used throughout the project for testing and solving 
 | --- | --- | --- | --- | --- |
 | Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
 | Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
-| News posts | User can see six news on one page and new pages are added in case of more than six news | Pages checked | Six news were on one page and then new pages are added in case of more than six news | Pass |
+| News posts | User can see six news posts on one page and new pages are added in case of more than six news posts | Pages checked for number of news posts | Six news posts were on one page and then new pages are added in case of more than six news posts | Pass |
 | Order of news posts | User should be able see the recent news posts first | News posts were checked based on their created date | The news posts were in descending order according to their created date | Pass |
 
 #### News categories
@@ -410,7 +410,7 @@ Chrome developer tools were used throughout the project for testing and solving 
 #### News Detail
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| News detail | Title of the news directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
+| News detail | Title of the news posts directs the user to read the details about that news | Clicked the title | Detail of the news opened | Pass |
 
 #### Comment on a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -426,7 +426,7 @@ Chrome developer tools were used throughout the project for testing and solving 
 #### Approval of comment 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
+| Approval of comment | User should be able to see that their submission needs approval | Comment approved after login to the admin | Message that comment is awaiting approval | Pass |
 
 #### Comment list 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -436,30 +436,30 @@ Chrome developer tools were used throughout the project for testing and solving 
 #### Like/Unlike a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Like/Unlike a news post | User should be able to like or unlike a news post | Clicked/unclicked the icon of hand on the news detail page | Like or unlike recorded | Pass |
+| Like/Unlike a news post | User should be able to like or unlike a news post | Clicked/unclicked the icon of thumb-up on the news detail page | Like or unlike recorded | Pass |
 
 #### Registration
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Registration | Link directs the user to the registration page | Clicked the link | Registration page loads | Pass |
-| User details | User will be able to input username and password with optional email | Input of username and password | Name and password added | Pass |
-| Send button | The username and password will be sent | Clicked on send button | Username and password sent | Pass |
+| User details | User will be able to input username and password with optional email | Input of username, password and email | Username, password and email added | Pass |
+| Send button | The username, password and email will be sent | Clicked on send button | Username, password and email sent | Pass |
 | Send button - hover effect | Send button background should change when hovered over to it as suggested | Hover over the send button | Send button displayed the correct styling when hovered over | Pass |
 
-#### Sign in
+#### Sign In
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Sign in | Link directs the user to the sign in page | Clicked the link | Sign in page loads | Pass |
+| Sign In | Link directs the user to the sign in page | Clicked the link | Sign In page loads | Pass |
 | User details | User will be able to input username and password | Input of username and password | Username and password added | Pass |
-| Sign in button | The user will be able to sign in | Clicked on sign in button | User could sign in | Pass |
-| Sign in button - hover effect | Sign in button background should change when hovered over to it as suggested | Hover over the sign in button | Sign in button displayed the correct styling when hovered over | Pass |
+| Sign In button | The user will be able to sign in | Clicked on sign in button | User could sign in | Pass |
+| Sign In button - hover effect | Sign In button background should change when hovered over to it as suggested | Hover over the sign in button | Sign In button displayed the correct styling when hovered over | Pass |
 
-#### Sign out
+#### Sign Out
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Sign out | Link directs the user to the sign out page | Clicked the link | Sign out page loads | Pass |
-| Sign out button | The user will be able to sign out | Clicked on sign out button | User could sign out | Pass |
-| Sign out button - hover effect | Sign out button background should change when hovered over to it as suggested | Hover over the sign out button | Sign out button displayed the correct styling when hovered over | Pass |
+| Sign Out | Link directs the user to the sign out page | Clicked the link | Sign Out page loads | Pass |
+| Sign Out button | The user will be able to sign out | Clicked on sign out button | User could sign out | Pass |
+| Sign Out button - hover effect | Sign Out button background should change when hovered over to it as suggested | Hover over the sign out button | Sign Out button displayed the correct styling when hovered over | Pass |
 
 ---
 
