@@ -470,18 +470,16 @@ Chrome developer tools were used throughout the project for testing and solving 
 I adjusted this issue:
    * 
 
+## Unfixed bugs
+* No unfixed bugs
+
 [Back to Table of contents](#table-of-contents)
 
 ___
 # Deployment
 
 ## GitHub
-The website was deployed on GitHub pages. Gitpod was used as a development environment where all the changes were committed to git version control system. The push command was used in Gitpod to save changes into GitHub.
-
-The following steps were taken to deploy the website:
-* Open the GitHub repository, navigate to the Settings tab
-* From the source section, select the Main Branch
-* Click save and page was deployed after auto-refresh to indicate the successful deployment
+Gitpod and Codeanywhere were used as a development environment where all the changes were committed to git version control system. The push command was used in Gitpod and Codeanywhere to save changes into GitHub.
 
 ## Heroku
 World News was deployed using Code Institute's mock terminal for Heroku.
@@ -489,7 +487,7 @@ The steps for deployment were as follows:
 * Fork or clone this repository
 * Create a new Heroku app
 * Set the buildpacks to Python and NodeJS in that order
-* Link the Heroku app to the repository
+* Link the Heroku app to the Github repository
 * Click on Deploy
 
 ## [View live website](https://ci-fsf-django-news.herokuapp.com/)
@@ -499,13 +497,13 @@ The steps for deployment were as follows:
 ___
 # Credits
 
-To complete the contents of WOrld News website, I learned coding and collected the information from different sources.
+To complete the contents of World News website, I learned coding and collected the information from different sources.
 * Learned HTML, CSS, JavaScript, and Python coding from [Code Institute](https://learn.codeinstitute.net/)
 * Used Code Institute student template [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 * Collected information on good and bad coding practices from:
   * [Write Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
   * [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-* The description on the DjangoBlog provided by the tutor of the Code Institute with [Django3Blog](https://github.com/Code-Institute-Solutions/Django3blog) was useful as well as an inspiration to design World News.
+* The description on the DjangoBlog provided by the tutor of the Code Institute with [Django3Blog](https://github.com/Code-Institute-Solutions/Django3blog)(https://p3-battleships.herokuapp.com/) was useful as well as an inspiration to design World News.
 * I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
 
 ## Content
