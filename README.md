@@ -391,6 +391,7 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Website title | Link directs the user back to the home page | Clicked the title | Home page reloads | Pass |
 | Home | Link directs the user back to the home page | Clicked the link | Home page reloads | Pass |
 | News posts | User can see six news on one page and new pages are added in case of more than six news | Pages checked | Six news were on one page and then new pages are added in case of more than six news | Pass |
+| Order of news posts | User should be able see the recent news posts first | News posts were checked based on their created date | The news posts were in descending order according to their created date | Pass |
 
 #### News categories
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -423,6 +424,11 @@ Chrome developer tools were used throughout the project for testing and solving 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Approval of comment | User should be able to see that their submission needs approval | Comment approved after log in to the admin | Message that comment is awaiting approval | Pass |
+
+#### Comment list 
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Order of comment list | User should be able see the recent comments first | Comments were checked based on their created date | The comments were in ascending order according to their created date | Pass |
 
 #### Like/Unlike a news post
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
