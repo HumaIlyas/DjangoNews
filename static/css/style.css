@@ -156,16 +156,14 @@ body {
 }
 
 /* Post like */
-.btn-like, .btn-unlike {
+.btn-like {
     color: #585655;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
-.btn-unlike:hover,
-.btn-like:active,
-.btn-unlike:active {
+.btn-like:active {
     color: #363534;
     background: transparent;
     border: none;
