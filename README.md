@@ -503,7 +503,7 @@ To complete the contents of World News website, I learned coding and collected t
 * Collected information on good and bad coding practices from:
   * [Write Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
   * [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-* The description on the DjangoBlog provided by the tutor of the Code Institute with [Django3Blog](https://github.com/Code-Institute-Solutions/Django3blog)(https://p3-battleships.herokuapp.com/) was useful as well as an inspiration to design World News.
+* The description on the DjangoBlog provided by the tutor of the Code Institute with [DjangoBlog](https://codestar2021.herokuapp.com/) was useful as well as an inspiration to design World News.
 * I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
 
 ## Content
