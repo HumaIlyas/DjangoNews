@@ -86,20 +86,18 @@
             <div class="card-body">
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
-                    {% if comment.approved}
-                    <div class="comments" style="padding: 15px;">
-                        <p class="font-weight-bold">
-                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                            {{ comment.name }}
-                            <span class=" text-muted font-weight-normal">
-                                <!-- The comment's created date goes here -->
-                                {{ comment.created_on }}
-                            </span> wrote:
-                        </p>
-                        <!-- The body of the comment goes before the | -->
-                        {{ comment.comment | linebreaks }}
-                    </div>    
-                    {% endif %}
+                <div class="comments" style="padding: 15px;">
+                    <p class="font-weight-bold">
+                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                        {{ comment.name }}
+                        <span class=" text-muted font-weight-normal">
+                            <!-- The comment's created date goes here -->
+                            {{ comment.created_on }}
+                        </span> wrote:
+                    </p>
+                    <!-- The body of the comment goes before the | -->
+                    {{ comment.comment | linebreaks }}
+                </div>
                 {% endfor %}
             </div>
         </div>
