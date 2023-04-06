@@ -495,9 +495,13 @@ World News was deployed using Code Institute's mock terminal for Heroku.
 The steps for deployment were as follows:
 * Fork or clone this repository
 * Create a new Heroku app
-* Set the buildpacks to Python and NodeJS in that order
-* Link the Heroku app to the Github repository
-* Click on Deploy
+* Set the buildpacks to Python
+* In settings add Environment variables in Config Vars including DATABASE_URL; SECRET_KEY; and CLOUDINARY_URL. During the development of the project DISABLE_COLLECTSTATIC was set to 1, which at the time of final deployment deleted.
+* DEBUG set to False before final deployment
+* Link the Heroku app to the Github repository [Project-4](https://github.com/HumaIlyas/Project-4)
+* Click on Deploy and then Deploy Branch at the bottom of the page
+* When the message appeared "Your app was successfully deployed"
+* Click on "View" to read the news on World News
 
 ## [View live website](https://ci-fsf-django-news.herokuapp.com/)
 
