@@ -86,14 +86,14 @@ class PostLike(View):
 
 class PostDelete(View):
     
-    def post(self, request, slug, *args, **kwargs):
+    def get(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if request.user == post.author:
             post.delete() 
         else:
             raise PermissionDenied
                 
-        return render('news/index.html', args=[slug])
+        return render(request, "news/index.html")
 
 
 class CommentList(generic.ListView):
