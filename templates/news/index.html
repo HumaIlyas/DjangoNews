@@ -32,28 +32,16 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} 
-                                <i class="fa-solid fa-thumbs-up"></i> {{ post.number_of_likes }} | 
-                                <i class="far fa-comments"> </i> {{ post.comments.count }}
-                            </p>
-                        </div>
-                        <div>
-                        <strong>
-                            {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_delete' post.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if deleted %}
-                                <button type="submit" name="post_id" value="{{post.slug}}" class="btn-delete">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
-                                {% else %}
-                                <button type="submit" name="post_id" value="{{post.slug}}" class="btn-delete">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
+                                <i class="fa-solid fa-thumbs-up"></i> {{ post.number_of_likes }} |
+                                <i class="far fa-comments"> </i> {{ post.comments.count }} |
+                                {% if request.user == post.author %}
+                                <a href="{% url 'delete_post' post.slug %}">
+                                    <button type="submit" name="post_id" value="{{post.slug}}" class="btn-delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </a>
                                 {% endif %}
-                            </form>
-                            {% else %}
-                            <span class="text-secondary"><i class="fa-regular fa-trash-can"></i></span>
-                            {% endif %}
+                            </p>   
                         </div>
                     </div>
                 </div>

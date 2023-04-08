@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.core.exceptions import PermissionDenied
 from django.http import HttpResponseRedirect
 from .models import Category, Post, Comment
 from .forms import CommentForm
@@ -18,6 +19,7 @@ class PostCategory(View):
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
+    permission_required = "delete_post"
     template_name = "news/index.html"
     paginate_by = 6
 
@@ -86,9 +88,12 @@ class PostDelete(View):
     
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
-        post.delete()
-
-        return render(request, "news/index.html")
+        if request.user == post.author:
+            post.delete() 
+        else:
+            raise PermissionDenied
+                
+        return render('news/index.html', args=[slug])
 
 
 class CommentList(generic.ListView):
