@@ -99,10 +99,8 @@ class PostDelete(View):
 class CommentList(generic.ListView):
     model = Comment
     template_name = "news/post_detail.html"
-    paginate_by = 6
 
 
 class CategoryList(generic.ListView):
     model = Category
     template_name = "news/index.html"
-    paginate_by = 6
