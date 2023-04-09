@@ -156,16 +156,27 @@ body {
 }
 
 /* Post like */
-.btn-like,
-.btn-delete {
+.btn-like {
     color: #585655;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
+.btn-like:active {
+    color: #363534;
+    background: transparent;
+    border: none;
+}
+
+/* Post delete */
+.btn-delete {
+    color: #585655;
+    border: none;
+    background: transparent;
+}
+
 .btn-delete:hover,
-.btn-like:active,
 .btn-delete:active {
     color: #363534;
     background: transparent;
