@@ -157,16 +157,16 @@ body {
 
 /* Post like */
 .btn-like,
-.button-delete {
+.btn-delete {
     color: #585655;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
-.button-delete:hover,
+.btn-delete:hover,
 .btn-like:active,
-.button-delete:active {
+.btn-delete:active {
     color: #363534;
     background: transparent;
     border: none;

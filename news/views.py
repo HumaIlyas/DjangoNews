@@ -19,7 +19,7 @@ class PostCategory(View):
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    permission_required = "delete_post"
+    permission_required = ("add_post", "delete_post")
     template_name = "news/index.html"
     paginate_by = 6
 
