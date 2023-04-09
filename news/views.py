@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.core.exceptions import PermissionDenied
 from django.http import HttpResponseRedirect
@@ -88,11 +88,11 @@ class PostDelete(View):
     
     def get(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
-        if request.user == post.author:
+        if request.user.is_superuser or request.user == post.author:
             post.delete() 
         else:
             raise PermissionDenied
-                
+
         return render(request, "news/index.html")
 
 
