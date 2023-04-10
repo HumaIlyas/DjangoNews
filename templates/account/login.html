@@ -31,6 +31,15 @@
                 <button class="btn btn-login right" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
+        <div>
+            {% if commented %}
+            {% if user.is_superuser %}
+            <div id = "msg" class="alert alert-info" role="alert">
+                Comments need approval
+            {% endif %}
+            {% endif %}
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
