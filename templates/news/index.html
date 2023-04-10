@@ -41,6 +41,15 @@
                                     </button>
                                 </a>
                                 {% endif %}
+                            </p>
+                            <p>
+                                {% if request.user.is_superuser %}
+                                <a href="{% url 'approve_comment' post.slug %}">
+                                    <button type="submit" name="post_id" value="{{post.slug}}" class="btn-msg">
+                                        <i class="fa-solid fa-message"></i>
+                                    </button>
+                                </a>
+                                {% endif %}
                             </p>   
                         </div>
                     </div>

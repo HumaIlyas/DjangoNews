@@ -95,6 +95,17 @@ class PostDelete(View):
         return render(request, "news/index.html")
 
 
+class CommentApproval(View):
+    
+   def get(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+        if post.comments.filter(approved=False).exists():
+            if request.user.is_superuser:
+                return render(request, "news/approve_message.html")
+        else:
+            return render(request, 'news/non_approve_message.html')
+
+
 class CommentList(generic.ListView):
     model = Comment
     template_name = "news/post_detail.html"

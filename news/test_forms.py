@@ -4,7 +4,7 @@ from .forms import CommentForm
 
 class TestCommentForm(TestCase):
 
-    def test_comment_body_is_required(self):
+    def test_comment_comment_is_required(self):
         form = CommentForm({'comment': ''})
         self.assertFalse(form.is_valid())
         self.assertIn('comment', form.errors.keys())
