@@ -101,9 +101,9 @@ class CommentApproval(View):
         post = get_object_or_404(Post, slug=slug)
         if post.comments.filter(approved=False).exists():
             if request.user.is_superuser:
-                return render(request, "news/approve_message.html")
+                return render(request, "news/approve_comment.html")
         else:
-            return render(request, 'news/non_approve_message.html')
+            return render(request, 'news/non_approve_comment.html')
 
 
 class CommentList(generic.ListView):

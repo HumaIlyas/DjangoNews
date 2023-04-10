@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktrans %}Comments are awaiting approval!{% endblocktrans %}
