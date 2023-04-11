@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ci-fsf-django-news.herokuapp.com", "localhost", "8000-humailyas-djangonews-x44f829gbs.us2.codeanyapp.com"]
+ALLOWED_HOSTS = ["ci-fsf-django-news.herokuapp.com", "localhost"]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
