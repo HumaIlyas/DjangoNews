@@ -183,6 +183,20 @@ body {
     border: none;
 }
 
+/* comment on a post */
+.btn-comment {
+    color: #585655;
+    border: none;
+    background: transparent;
+}
+
+.btn-comment:hover,
+.btn-comment:active {
+    color: #363534;
+    background: transparent;
+    border: none;
+}
+
 /* message for approval of comment */
 .btn-msg {
     color: #585655;
