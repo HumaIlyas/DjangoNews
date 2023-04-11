@@ -23,7 +23,15 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
+                                    <p class="author">Author: {{ post.author }}
+                                        {% if request.user.is_superuser or request.user == post.author %}
+                                        <a href="{% url 'delete_post' post.slug %}">
+                                            <button type="submit" name="post_id" value="{{post.slug}}" class="btn-delete">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </a>
+                                        {% endif %}
+                                    </p>
                                 </div>
                             </div>
                             <a href="{% url 'news/post_detail' post.slug  %}" class="post-link">
@@ -34,16 +42,13 @@
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} 
                                 <i class="fa-solid fa-thumbs-up"></i> {{ post.number_of_likes }} |
-                                <i class="far fa-comments"> </i> {{ post.comments.count }}
-                                {% if request.user.is_superuser or request.user == post.author %}
-                                <a href="{% url 'delete_post' post.slug %}">
-                                    <button type="submit" name="post_id" value="{{post.slug}}" class="btn-delete">
-                                        <i class="fa-solid fa-trash-can"></i>
-                                    </button>
+                                {% with comments.count as total_comments %}
+                                <a href="{% url 'home' post.slug %}">
+                                    <i class="far fa-comments"></i>
+                                        {{ total_comments }}
                                 </a>
-                                {% endif %}
-                            </p>
-                            <p>
+                                {% endwith %}
+                           
                                 {% if request.user.is_superuser %}
                                 <a href="{% url 'approve_comment' post.slug %}">
                                     <button type="submit" name="post_id" value="{{post.slug}}" class="btn-msg">
