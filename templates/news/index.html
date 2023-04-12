@@ -40,16 +40,18 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}} 
-                                <i class="fa-solid fa-thumbs-up"></i> {{ post.number_of_likes }} |
+                            <p class="card-text text-muted h6">{{ post.created_on}} |  
+                                <i class="fa-solid fa-thumbs-up"></i> {{ post.number_of_likes }}
 
+                                {% if user.is_authenticated %}
                                 {% with comments.count as total_comments %}
-                                <a href="{% url 'comment_post' post.slug %}">
+                                <a href="{% url 'news/post_detail' post.slug %}">
                                     <button type="submit" name="post_id" value="{{post.slug}}" class="btn-comment">
                                         <i class="fa-solid fa-comments"></i>{{ total_comments }}
                                     </button>
                                 </a>
                                 {% endwith %}
+                                {% endif %}
                            
                                 {% if request.user.is_superuser %}
                                 <a href="{% url 'approve_comment' post.slug %}">    

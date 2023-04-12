@@ -95,20 +95,6 @@ class PostDelete(View):
         return render(request, "news/index.html")
 
 
-class PostComment(View):    
-    def post(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True)
-
-        context = {
-            "post": post,
-            "comments": comments,
-            "commented": True,
-        }
-        return render(request, "news/index.html", context)
-
-
 class CommentApproval(View):
     
    def get(self, request, slug, *args, **kwargs):
