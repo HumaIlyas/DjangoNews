@@ -197,6 +197,10 @@ body {
     border: none;
 }
 
+a {
+text-decoration: none;
+}
+
 /* message for approval of comment */
 .btn-msg {
     color: #585655;
