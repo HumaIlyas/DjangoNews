@@ -108,11 +108,13 @@ class CommentApproval(View):
             return render(request, 'news/non_approve_comment.html')
 
 
-class UserProfile(TemplateView):
-    template_name = 'news/profile.html'
+class UserProfile(View):
+    def get(self, request):
+        if request.user.is_authenticated:
+            return render(request, "news/profile.html")
 
 
-class UserAdmin(TemplateView):
+class UserAdmin(View):
     def get(request):
         if request.user.is_superuser:
             return render(request, "news/admin.html")
