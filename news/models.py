@@ -8,7 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Category(models.Model):
     category = models.CharField(max_length=100, unique=True)
-    title = models.CharField(max_length=200, unique=True)
+    title = models.CharField(max_length=100, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -22,9 +22,9 @@ class Post(models.Model):
     author = models.ForeignKey(User, null=True, on_delete=models.CASCADE, related_name="news_posts")
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
-    updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='news_likes', blank=True)
 
