@@ -118,8 +118,6 @@ class UserAdmin(View):
     def get(request):
         if request.user.is_superuser:
             return render(request, "news/admin.html")
-        else:
-            return render(request, 'news/non_admin.html')
 
 
 class CommentList(generic.ListView):

@@ -1,9 +1,10 @@
 from django.test import TestCase, RequestFactory
 from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.views.generic.base import TemplateView
 from django.contrib.auth.models import User
 from .models import Category, Post, Comment
 from .forms import CommentForm
-from .views import PostList, PostDetail, PostLike, PostCategory, CommentList, CategoryList
+from .views import PostCategory, PostList, PostDetail, PostLike, PostDelete, CommentApproval, UserProfile, UserAdmin
 
 class TestPostCategory(TestCase):
     def test_get(self):
@@ -26,7 +27,7 @@ class TestPostList(TestCase):
     def test_post_list(self):
         test_response = self.client.get('/posts/')
         self.assertEqual(test_response.status_code, 404, 'created on')
-        self.assertFalse('news/index.html' in test_response.context)
+        self.assertTrue(test_response, 'news/index.html')
 
 class TestPostDetail(TestCase):
     def setUp(self):
@@ -70,7 +71,7 @@ class TestPostLike(TestCase):
         post.likes.add(self.user)
         self.assertEqual(test_response.status_code, 404)
         self.assertEqual(post.likes.first(), self.user)
-        self.assertFalse('news/post_detail.html' in test_response.context)
+        self.assertTrue(test_response, 'news/post_detail.html')
 
 class TestPostDelete(TestCase):
     def setUp(self):
@@ -89,7 +90,32 @@ class TestPostDelete(TestCase):
         test_response = self.client.get('/posts/')
         self.assertEqual(test_response.status_code, 404)
         self.assertEqual(post.delete(), (1, {'news.Post': 1}))
-        self.assertFalse('news/post_detail.html' in test_response.context)
+        self.assertTrue(test_response, 'news/post_detail.html')
+
+
+class TestCommentApproval(TestCase):    
+    def test_get(self):
+        test_response = self.client.get('/posts/')
+        post = Post.objects.create(title='Test post')
+        self.assertEqual(test_response.status_code, 404)
+        self.assertTrue(test_response, 'news/non_approve_comment.html')
+        self.assertTrue(test_response, 'news/approve_comment.html')
+
+
+class TestUserProfile(TestCase):    
+    def test_get(self):
+        test_response = self.client.get('/users/')
+        user = User.objects.create_user(username='Test user')
+        self.assertEqual(test_response.status_code, 404)
+        self.assertTrue(test_response, 'news/profile.html')
+
+
+class TestUserAdmin(TestCase):    
+    def test_get(self):
+        test_response = self.client.get('/users/')
+        user = User.objects.create_user(username='Test user')
+        self.assertEqual(test_response.status_code, 404)
+        self.assertTrue(test_response, 'news/admin.html')
             
 
 class TestCommentList(TestCase):    

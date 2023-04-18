@@ -92,19 +92,36 @@ The main goals of the website user are
     <img src="static/images/desktop.jpg" alt="Website on desktop">
 </div>
 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/desktop1.jpg" alt="Website on desktop">
+</div>
+
 ### Website on laptop
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="static/images/laptop.jpg" alt="Website on laptop">
 </div>
 
-### Website on tablets
+### Website on laptop
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="static/images/tablets.jpg" alt="Website on tablets">
+    <img src="static/images/laptop1.jpg" alt="Website on laptop">
+</div>
+
+### Website on tablets & ipads
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/tablets-ipads.jpg" alt="Website on tablets & ipads">
+</div>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/tablets-ipads1.jpg" alt="Website on tablets & ipads">
 </div>
 
 ### Website on mobile
 <div style="margin-top: 20px; margin-bottom: 20px;">
     <img src="static/images/mobile.jpg" alt="Website on mobile">
+</div>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/mobile1.jpg" alt="Website on mobile">
 </div>
 
 ## Surface
