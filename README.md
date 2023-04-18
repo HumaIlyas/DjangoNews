@@ -1,7 +1,7 @@
 # World News
 World News is a site for users who are interested in reading news of different categories. World News will keep them aware about the happenings around the world. The goal of the site is provide a platform to the users for discussion while commenting and liking or unliknig the news. 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-    <img src="static/images/different-screen-sizes.jpg" alt="Website on different screen sizes">
+    <img src="static/images/home-page.jpg" alt="Home page">
 </div>
 
 ## [View live website](https://ci-fsf-django-news.herokuapp.com/)
@@ -86,6 +86,26 @@ The main goals of the website user are
 * The design of the website is user-friendy as this is responsive on all type of devices: desktop, laptops, tablets, ipads and mobiles.
 * On all the above mentioned devices users can have a fantastic experience. 
 * All parts of the website are designed to achieve maximum user satisfaction.
+
+### Website on desktop
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/desktop.jpg" alt="Website on desktop">
+</div>
+
+### Website on laptop
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/laptop.jpg" alt="Website on laptop">
+</div>
+
+### Website on tablets
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/tablets.jpg" alt="Website on tablets">
+</div>
+
+### Website on mobile
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="static/images/mobile.jpg" alt="Website on mobile">
+</div>
 
 ## Surface
 
