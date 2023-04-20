@@ -2,9 +2,9 @@
  * @jest-environment jsdom
  */
 
-const {setTimeout} = require("../message");
+const {setTimeout} = require("../message", "bootstrap");
 
-it('should set alert to "close" after 2980ms when close is fired', (done) => {
+it('should set alert to "close" after 3000 ms', (done) => {
     setTimeout(() => {
         expect(alert.close);
         done();
