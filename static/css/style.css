@@ -3,6 +3,7 @@
 /* body */
 body {
     background-color: #F9FAFC;
+    overflow-x: hidden;
 }
 
 /* background colors */
@@ -250,17 +251,9 @@ text-decoration: none;
     border: none;
 }
 
-#message-text {
-    font-size: 120%;
-    font-family: Oswald, sans-serif;
-    line-height: 35px;
+.message-text {
+    margin-top: 100px;
     text-align: center;
-    width: 400px;
-    height: 100px;
-    padding: 20px;
-    bottom: 500px;
-    left: 500px;
-    position: absolute;
 }
 
 /* footer */
@@ -288,4 +281,28 @@ ul {
     background-color: #fff3cd;
     border-color: #ffecb5;
     text-align: left;
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Post like */
+    .col-1 {
+        flex: 0 0 auto;
+        width: 12%;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 480px
+*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /* Post like */
+    .col-1 {
+        flex: 0 0 auto;
+        width: 22%;
+    }
 }

@@ -1,11 +1,14 @@
 {% extends "news/base.html" %}
 
 {% block content %}
-
-<div id="message-text">
-    <div class="alert alert-info" role="alert">
-        Comments are awaiting approval!
+<div class="container message-text">
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <div class="alert alert-info" role="alert">
+                Comments are awaiting approval!
+            </div>
+        </div>
     </div>
 </div>
                        
-{%endblock%}
+{% endblock content %}
